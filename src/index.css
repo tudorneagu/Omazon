@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Amazon Ember", Arial, sans-serif;
+  }
+
+  @font-face {
+    font-family: Amazon Ember;
+    font-weight: 400;
+    src: url(/fonts/amazon-ember-400.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: Amazon Ember;
+    font-weight: 500;
+    src: url(/fonts/amazon-ember-500.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: Amazon Ember;
+    font-weight: 700;
+    src: url(/fonts/amazon-ember-700.woff2) format("woff2");
+  }
+  .heading-m {
+    @apply text-[26px] leading-[48px] font-bold;
+  }
+
+  .heading-s {
+    @apply text-[21px] leading-[24px] font-bold;
+  }
+
+  .text-m-regular {
+    @apply text-[16px] leading-[24px] font-normal;
+  }
+
+  .text-m-medium {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+
+  .text-s-regular {
+    @apply text-[13px] leading-[24px] font-normal;
+  }
+
+  .text-s-bold {
+    @apply text-[13px] leading-[24px] font-bold;
+  }
+
+  .text-xs-regular {
+    @apply text-[10px] leading-[24px] font-normal;
+  }
+
+  .menu-m {
+    @apply text-[13px] leading-[24px] font-boldl;
+  }
+  .menu-s {
+    @apply text-[10px]  font-normal;
+  }
+  
+  }
+  
+  @layer utilities {
+    .outline-default {
+      box-shadow: 
+        0 0 0 3px #C8F3FA,  
+        inset 0 0 0 2px #fff; 
+    }
+    .outline-error {
+      box-shadow: 
+        0 0 0 3px #FAD0C8,  
+        inset 0 0 0 2px #fff; 
+    }
+  
+
+}
