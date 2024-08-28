@@ -1,10 +1,24 @@
 import ProductCard from "../Products/ProductCard";
+import type { IProduct } from "../../@types/index.types";
 
-function NewProducts({ products = [] }) {
+interface NewProductsProps {
+	products: IProduct[];
+}
+function NewProducts({ products = [] }: NewProductsProps) {
 	return (
 		<div className="flex flex-col gap-6">
 			<h1 className="heading-m">Nouveautés</h1>
-			<div className="flex gap-6 flex-wrap ">{products.length > 0}</div>
+			<div className="flex gap-6 flex-wrap ">
+				{products.length > 0 ? (
+					products
+						.filter((product) => product.tag?.type === "new")
+						.map((product) => (
+							<ProductCard key={product.id} product={product} showTag={false} />
+						))
+				) : (
+					<p>Pas de nouveautés disponibles</p>
+				)}
+			</div>
 		</div>
 	);
 }

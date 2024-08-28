@@ -24,6 +24,7 @@
     font-weight: 700;
     src: url(/fonts/amazon-ember-700.woff2) format("woff2");
   }
+
   .heading-m {
     @apply text-[26px] leading-[48px] font-bold;
   }
@@ -55,26 +56,29 @@
   .menu-m {
     @apply text-[13px] leading-[24px] font-bold;
   }
-  .menu-s {
-    @apply text-[10px]  font-normal;
-  }
-  
-  .choice{
-    @apply 
-  }
-  }
-  
-  @layer utilities {
-    .outline-default {
-      box-shadow: 
-        0 0 0 3px #C8F3FA,  
-        inset 0 0 0 2px #fff; 
-    }
-    .outline-error {
-      box-shadow: 
-        0 0 0 3px #FAD0C8,  
-        inset 0 0 0 2px #fff; 
-    }
-  
 
+  .menu-s {
+    @apply text-[10px] font-normal;
+  }
+
+  .choice-tag-orange span {
+    color: #ff9900; /* Example styling */
+    font-weight: normal;
+  }
+
+  
+}
+
+@layer utilities {
+  .outline-default {
+    box-shadow: 
+      0 0 0 3px #C8F3FA,  
+      inset 0 0 0 2px #fff;
+  }
+  
+  .outline-error {
+    box-shadow: 
+      0 0 0 3px #FAD0C8,  
+      inset 0 0 0 2px #fff;
+  }
 }

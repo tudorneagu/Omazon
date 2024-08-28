@@ -1,25 +1,36 @@
 import Button from "../AddButton";
-function ProductCard({ product }) {
-	console.log(product);
+import Tag from "../Tags";
+import type { IProduct, ITag } from "../../@types/index.types";
+import FormatPrice from "../utils/FormatPrice";
+
+interface ProductCardProps {
+	product: IProduct;
+	showTag?: boolean;
+}
+
+function ProductCard({ product, showTag = true }: ProductCardProps) {
 	return (
-		<div className="border w-[330px] h-[518px] border-main-lower flex flex-col ">
-			<div className="h-[330px] flex justify-center items-center bg-black/5">
+		<div className=" overflow-hidden relative border w-[330px] h-[518px] border-main-lower flex flex-col ">
+			{showTag && product.tag !== null ? <Tag tag={product.tag} /> : ""}
+			<div className="h-[330px] w-[330px] flex justify-center items-center bg-black/5">
 				<img
-					className="h-[296px] object-cover -z-10"
+					className="h-[220px] w-auto object-contain -z-10"
 					src={`./assets/products/${product?.image}`}
 					alt={product?.title || "product"}
 				/>
 			</div>
-			<div className="flex flex-col  gap-2 p-3 h-full">
+			<div className="flex flex-col flex-grow justify-between p-3">
 				<h3 className="line-clamp-3 text-ellipsis">
 					{product?.title || "Produit sans nom"}
 				</h3>
-				<p>
-					{product?.price
-						? `$${product.price}`
-						: "Le prix n'est pas disponible"}
-				</p>
-				<Button />
+				<div className="flex flex-col gap-2 mt-auto">
+					<p>
+						{product?.price
+							? FormatPrice(product.price)
+							: "Le prix n'est pas disponible"}
+					</p>
+					<Button />
+				</div>
 			</div>
 		</div>
 	);
