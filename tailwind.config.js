@@ -3,7 +3,8 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		screens: {
-			sm: "500px",
+			sm: "360px",
+			md: "768",
 			lg: "1024",
 		},
 
@@ -48,6 +49,11 @@ export default {
 						background: "#ff9900",
 						border: "#007185",
 					},
+				},
+				transparency: {
+					invisible: "#00000000",
+					mask: "##0000000a",
+					overlay: "#00000099",
 				},
 			},
 			opacity: {
