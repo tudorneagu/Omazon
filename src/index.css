@@ -59,6 +59,9 @@
     @apply text-[10px]  font-normal;
   }
   
+  .choice{
+    @apply 
+  }
   }
   
   @layer utilities {

@@ -1,18 +1,16 @@
-function SearchBar() {
+function SearchBar({ categories }) {
 	return (
 		<form className="flex-grow flex h-9">
+			console.log (categories)
 			<select className="w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
-				<option value="" disabled selected>
+				<option defaultValue="" disabled selected>
 					Toutes nos catégories
 				</option>
-				<option>Animalierie</option>
-				<option>Beauté et parfum</option>
-				<option>Bricolage</option>
-				<option>Chaussures</option>
-				<option>Jardin</option>
-				<option>Jeux et jouets</option>
-				<option>Jeux vidéos</option>
-				<option>Livres</option>
+				{categories.map((category) => (
+					<option key={category.id} value={category.id}>
+						{category.title}
+					</option>
+				))}
 			</select>
 			<input
 				className="flex-grow px-3 text-m-regular text-main-highest placeholder:text-m-regular"
