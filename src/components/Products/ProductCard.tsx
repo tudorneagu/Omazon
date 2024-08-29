@@ -1,6 +1,6 @@
 import Button from "../AddButton";
 import Tag from "../Tags";
-import type { IProduct, ITag } from "../../@types/index.types";
+import type { IProduct } from "../../@types/index.types";
 import FormatPrice from "../utils/FormatPrice";
 
 interface ProductCardProps {
@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 function ProductCard({ product, showTag = true }: ProductCardProps) {
 	return (
-		<div className=" overflow-hidden relative border w-[330px] h-[518px] border-main-lower flex flex-col ">
+		<div className="overflow-hidden relative border w-[330px] h-[518px] border-main-lower flex flex-col">
 			{showTag && product.tag !== null ? <Tag tag={product.tag} /> : ""}
 			<div className="h-[330px] w-[330px] flex justify-center items-center bg-black/5">
 				<img
@@ -24,11 +24,13 @@ function ProductCard({ product, showTag = true }: ProductCardProps) {
 					{product?.title || "Produit sans nom"}
 				</h3>
 				<div className="flex flex-col gap-2 mt-auto">
-					<p>
-						{product?.price
-							? FormatPrice(product.price)
-							: "Le prix n'est pas disponible"}
-					</p>
+					<div>
+						{product?.price ? (
+							FormatPrice(product.price)
+						) : (
+							<p>Le prix n'est pas disponible</p>
+						)}
+					</div>
 					<Button />
 				</div>
 			</div>

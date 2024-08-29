@@ -1,9 +1,14 @@
-function SearchBar({ categories }) {
+import products from "../../data/products.json";
+
+function SearchBar({ categories, setSearchQuery }) {
+	const handleSearchQuery = (e) => {
+		setSearchQuery(e.target.value);
+	};
+
 	return (
 		<form className="flex-grow flex h-9">
-			console.log (categories)
-			<select className="w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
-				<option defaultValue="" disabled selected>
+			<select className="appearance-none w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
+				<option selected disabled>
 					Toutes nos catégories
 				</option>
 				{categories.map((category) => (
@@ -16,6 +21,7 @@ function SearchBar({ categories }) {
 				className="flex-grow px-3 text-m-regular text-main-highest placeholder:text-m-regular"
 				type="text"
 				placeholder="Recherche Omazon"
+				onChange={handleSearchQuery}
 			/>
 			<button
 				type="button"

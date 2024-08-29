@@ -13,7 +13,9 @@ function NewProducts({ products = [] }: NewProductsProps) {
 					products
 						.filter((product) => product.tag?.type === "new")
 						.map((product) => (
-							<ProductCard key={product.id} product={product} showTag={false} />
+							<div key={product.id}>
+								<ProductCard product={product} showTag={false} />
+							</div>
 						))
 				) : (
 					<p>Pas de nouveautés disponibles</p>
