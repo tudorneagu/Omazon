@@ -23,19 +23,23 @@ function SearchResults() {
 	}
 
 	return (
-		<div className=" absolute border border-main-lightest top-9 z-10 bg-main-lowest h-fit overflow-y-auto p-2 ">
-			{searchResults()
-				?.slice(0, 6)
-				.map((product) => (
-					<Link
-						to={`/product/${product.title}`}
-						className="text-m-regular"
-						key={product.id}
-						onClick={handleClick}
-					>
-						{product.title}
-					</Link>
-				))}
+		<div>
+			{searchResults()?.length > 0 && (
+				<div className="absolute border border-main-lightest top-9 z-10 bg-main-lowest h-fit overflow-y-auto p-2">
+					{searchResults()
+						.slice(0, 6)
+						.map((product) => (
+							<Link
+								to={`/product/${product.title}`}
+								className="text-m-regular line-clamp-1 text-ellipsis"
+								key={product.id}
+								onClick={handleClick}
+							>
+								{product.title}
+							</Link>
+						))}
+				</div>
+			)}
 		</div>
 	);
 }

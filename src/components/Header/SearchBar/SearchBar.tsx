@@ -3,7 +3,7 @@ import { ProductContext } from "../../contexts/ProductContext";
 
 import SearchCategory from "./SearchCategory";
 import SearchField from "./SearchField";
-import SearchButton from "../../ui/SearchButton";
+import SearchButton from "../../ui/Buttons/SearchButton";
 import SearchResults from "./SearchResults";
 
 function SearchBar() {

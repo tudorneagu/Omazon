@@ -1,5 +1,5 @@
 import Logo from "../Header/Logo";
-import FooterButton from "../ui/FooterButton";
+import FooterButton from "../ui/Buttons/Button";
 function FooterCta() {
 	return (
 		<div className="flex flex-col justify-center items-center bg-main-high ">
@@ -13,7 +13,9 @@ function FooterCta() {
 					<br /> Rejoignez notre communauté de vendeurs dès aujourd'hui !
 				</p>
 
-				<FooterButton />
+				<FooterButton>
+					<p className="text-main-low">Devenez vendeur sur Omazon</p>
+				</FooterButton>
 			</div>
 			<div className="w-screen flex items-center justify-center h-20  border-t-brand-grey border-t">
 				<Logo />

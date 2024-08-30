@@ -1,6 +1,7 @@
 import Categories from "../components/Catégories/Categories";
 import NewProducts from "../components/Nouveautés/NewProducts";
 import Products from "../components/Products/Products";
+import LogInModal from "../components/ui/Modals/LoginForm";
 
 function Home() {
 	return (
