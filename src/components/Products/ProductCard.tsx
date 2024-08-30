@@ -1,4 +1,4 @@
-import Button from "../AddButton";
+import Button from "../ui/AddButton";
 import Tag from "../Tags";
 import type { IProduct } from "../../@types/index.types";
 import FormatPrice from "../utils/FormatPrice";

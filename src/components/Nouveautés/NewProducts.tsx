@@ -1,10 +1,10 @@
 import ProductCard from "../Products/ProductCard";
-import type { IProduct } from "../../@types/index.types";
 
-interface NewProductsProps {
-	products: IProduct[];
-}
-function NewProducts({ products = [] }: NewProductsProps) {
+import { useContext } from "react";
+import { ProductContext } from "../contexts/ProductContext";
+
+function NewProducts() {
+	const { products } = useContext(ProductContext);
 	return (
 		<div className="flex flex-col gap-6">
 			<h1 className="heading-m">Nouveautés</h1>

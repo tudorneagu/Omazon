@@ -3,27 +3,21 @@ import { useState } from "react";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
-import categories from "./data/categories.json";
+import { ProductProvider } from "./components/contexts/ProductContext";
 
 function App() {
-	const [searchQuery, setSearchQuery] = useState<string | null>("");
-
 	return (
-		<div>
-			<Header
-				categories={categories}
-				setSearchQuery={setSearchQuery}
-				searchQuery={searchQuery}
-			/>
-			<main>
-				<BrowserRouter>
+		<ProductProvider>
+			<BrowserRouter>
+				<Header />
+				<main>
 					<Routes>
-						<Route path="/" element={<Home categories={categories} />} />
+						<Route path="/" element={<Home />} />
 					</Routes>
-				</BrowserRouter>
-			</main>
-			<Footer />
-		</div>
+				</main>
+				<Footer />
+			</BrowserRouter>
+		</ProductProvider>
 	);
 }
 

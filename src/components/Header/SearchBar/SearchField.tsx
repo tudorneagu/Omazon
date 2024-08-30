@@ -1,16 +1,21 @@
+import { useContext } from "react";
+import { ProductContext } from "../../contexts/ProductContext";
+
 function SearchField() {
-	const handleSearchQuery = (e) => {
+	const { setSearchQuery, searchQuery, searchInput } =
+		useContext(ProductContext);
+	const handleSearchQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setSearchQuery(e.target.value);
 	};
+	console.log(searchQuery);
 	return (
-		<div>
-			<input
-				className="flex-grow px-3 text-m-regular text-main-highest placeholder:text-m-regular"
-				type="text"
-				placeholder="Recherche Omazon"
-				onChange={handleSearchQuery}
-			/>
-		</div>
+		<input
+			className="flex-grow px-3 text-m-regular text-main-highest placeholder:text-m-regular"
+			type="text"
+			placeholder="Recherche Omazon"
+			onChange={handleSearchQuery}
+			ref={searchInput}
+		/>
 	);
 }
 

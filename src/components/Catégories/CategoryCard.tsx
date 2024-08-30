@@ -1,4 +1,10 @@
-function Category({ category }) {
+import type { ICategory } from "../../@types/index.types";
+
+interface CategoryProps {
+	category: ICategory;
+}
+
+function Category({ category }: CategoryProps) {
 	return (
 		<div className="w-[212px] h-[264px] flex flex-col items-center justify-between">
 			<div className="bg-black/5 w-[212px] h-[212px] flex justify-center items-center rounded-full">

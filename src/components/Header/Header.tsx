@@ -1,16 +1,12 @@
 import Logo from "./Logo";
-import SearchBar from "./SearchBar";
+import SearchBar from "./SearchBar/SearchBar";
 import UserPanel from "./UserPanel";
 
-function Header({ categories, setSearchQuery, searchQuery }) {
+function Header() {
 	return (
 		<header className="bg-main-higher py-5 px-6 flex items-center gap-9 w-screen">
 			<Logo />
-			<SearchBar
-				categories={categories}
-				setSearchQuery={setSearchQuery}
-				searchQuery={searchQuery}
-			/>
+			<SearchBar />
 			<UserPanel />
 		</header>
 	);

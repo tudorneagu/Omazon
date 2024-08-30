@@ -1,5 +1,7 @@
-BEGIN ;
-DROP TABLE IF EXISTS "categories", "tags", "products", "users";
+BEGIN;
+
+DROP TABLE IF EXISTS "categories", "tags", "products", "users", "user_products";
+
 CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
@@ -28,4 +30,11 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE user_products (
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    product_id INT REFERENCES products(id) ON DELETE CASCADE,
+    PRIMARY KEY (user_id, product_id)
+);
+
 COMMIT;

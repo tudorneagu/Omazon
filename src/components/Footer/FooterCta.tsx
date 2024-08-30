@@ -1,5 +1,5 @@
 import Logo from "../Header/Logo";
-import FooterButton from "../FooterButton";
+import FooterButton from "../ui/FooterButton";
 function FooterCta() {
 	return (
 		<div className="flex flex-col justify-center items-center bg-main-high ">
