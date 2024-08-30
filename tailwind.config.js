@@ -9,6 +9,11 @@ export default {
 		},
 
 		extend: {
+			maxWidth: {
+				"screen-sm": "400px",
+				"screen-md": "768px",
+				"screen-lg": "1024px",
+			},
 			colors: {
 				main: {
 					lowest: "#ffffff",
