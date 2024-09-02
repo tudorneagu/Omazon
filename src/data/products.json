@@ -14,7 +14,8 @@
 			"id": 3,
 			"type": "best-seller",
 			"text": "N°1 des ventes"
-		}
+		},
+		"description": "Ce frisbee en caoutchouc naturel de Trixie est idéal pour les jeux en plein air avec votre chien. Il est conçu pour être résistant et agréable à mâcher, tout en étant doux pour les dents de votre animal. Disponible en coloris aléatoire, il offre des moments de divertissement tout en favorisant l'exercice."
 	},
 	{
 		"id": 2,
@@ -27,7 +28,8 @@
 			"slug": "animalerie",
 			"image": "animalerie.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "La litière autonettoyante PETKIT Pura Max est l'accessoire idéal pour les propriétaires de chats recherchant une solution pratique et hygiénique. Avec une capacité de 76L, elle est parfaite pour les foyers avec plusieurs chats. Elle élimine les odeurs efficacement et peut être contrôlée via une application pour un confort optimal."
 	},
 	{
 		"id": 3,
@@ -44,7 +46,8 @@
 			"id": 1,
 			"type": "choice",
 			"text": "Choix <span>d'Omazon</span>"
-		}
+		},
+		"description": "Les sacs à déjections canines Omazon Basics sont un choix pratique pour les promenades avec votre chien. Livrés avec un distributeur et un clip pour laisse, ces sacs sont faciles à transporter et à utiliser. Ils sont solides et parfaitement adaptés pour une utilisation quotidienne."
 	},
 	{
 		"id": 4,
@@ -61,7 +64,8 @@
 			"id": 2,
 			"type": "new",
 			"text": "Nouveauté"
-		}
+		},
+		"description": "Le sérum barbe LUXÉOL est spécialement formulé pour stimuler la pousse de la barbe tout en augmentant sa densité et son épaisseur. Ce produit fabriqué en Europe offre des résultats visibles tout en prenant soin de la peau sous-jacente. Parfait pour les barbus soucieux de l’apparence de leur pilosité faciale."
 	},
 	{
 		"id": 5,
@@ -74,7 +78,8 @@
 			"slug": "beaute-et-parfum",
 			"image": "beaute-et-parfum.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le vernis à ongles ESSIE offre une couleur vibrante et une finition lisse et brillante. Disponible en format 13,5 ml, ce vernis est idéal pour des manucures éclatantes et durables. Parfait pour ajouter une touche de couleur à votre look quotidien."
 	},
 	{
 		"id": 6,
@@ -91,7 +96,8 @@
 			"id": 4,
 			"type": "flash",
 			"text": "Vente flash"
-		}
+		},
+		"description": "La palette Lancôme Hypnôse propose 5 teintes roses sophistiquées pour un maquillage des yeux élégant et polyvalent. Les fards à paupières offrent une texture soyeuse et une tenue longue durée, permettant de créer des looks variés du plus naturel au plus audacieux."
 	},
 	{
 		"id": 7,
@@ -108,7 +114,8 @@
 			"id": 3,
 			"type": "best-seller",
 			"text": "N°1 des ventes"
-		}
+		},
+		"description": "Loctite Super Glue-3 Précision est une colle liquide ultra forte, idéale pour des réparations précises sur tous types de matériaux. Son séchage rapide et sa transparence en font un allié de choix pour toutes vos petites réparations domestiques."
 	},
 	{
 		"id": 8,
@@ -121,7 +128,8 @@
 			"slug": "bricolage",
 			"image": "bricolage.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le multimètre numérique KAIWEETS est un outil polyvalent pour tous vos besoins en bricolage et en électricité. Il permet de mesurer la tension, le courant et la résistance avec précision. Compact et facile à utiliser, il est idéal pour les amateurs et les professionnels."
 	},
 	{
 		"id": 9,
@@ -134,7 +142,8 @@
 			"slug": "bricolage",
 			"image": "bricolage.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "La monture de scie à métaux FACOM est conçue pour offrir une prise en main confortable et ergonomique. Légère et compacte, elle permet de réaliser des coupes précises tout en minimisant la fatigue lors de l'utilisation. Un outil indispensable pour tous les bricoleurs."
 	},
 	{
 		"id": 10,
@@ -151,7 +160,8 @@
 			"id": 2,
 			"type": "new",
 			"text": "Nouveauté"
-		}
+		},
+		"description": "Cette scie sauteuse de 720W de MAKITA est fournie avec 6 lames dans un coffret Makpac, idéale pour les travaux de découpe précis. Sa puissance et sa polyvalence en font un outil de choix pour les professionnels comme pour les bricoleurs avertis."
 	},
 	{
 		"id": 11,
@@ -164,7 +174,8 @@
 			"slug": "bricolage",
 			"image": "bricolage.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le coffret de tournevis Facom comprend 5 pièces de haute qualité, parfait pour une utilisation quotidienne. Conçu pour offrir une excellente prise en main et une grande durabilité, ce kit est essentiel pour tous vos travaux de bricolage."
 	},
 	{
 		"id": 12,
@@ -181,7 +192,8 @@
 			"id": 2,
 			"type": "new",
 			"text": "Nouveauté"
-		}
+		},
+		"description": "Les Vans Sk8-Hi en version rose léopard Slim offrent un look audacieux et tendance. Ces baskets montantes, parfaites pour un style urbain, allient confort et durabilité. Idéales pour les amateurs de mode à la recherche d’une touche unique dans leur garde-robe."
 	},
 	{
 		"id": 13,
@@ -194,7 +206,8 @@
 			"slug": "chaussures",
 			"image": "chaussures.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Ces pantoufles mignonnes en forme d'alpaga rose sont parfaites pour garder vos pieds au chaud tout en ajoutant une touche de fun à votre tenue d'intérieur. Leur matière douce et pelucheuse offre un confort exceptionnel pour des moments de détente."
 	},
 	{
 		"id": 14,
@@ -207,7 +220,8 @@
 			"slug": "chaussures",
 			"image": "chaussures.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Les chaussures de trail LA SPORTIVA Jackal II pour femme sont conçues pour offrir une adhérence et un confort optimal sur les terrains les plus difficiles. Légères et robustes, elles sont parfaites pour les coureuses de trail à la recherche de performances et de fiabilité."
 	},
 	{
 		"id": 15,
@@ -220,7 +234,8 @@
 			"slug": "chaussures",
 			"image": "chaussures.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Les baskets DC Shoes Pure High-Top WC Winter pour homme allient style et fonctionnalité. Conçues pour l'hiver, elles offrent une protection contre le froid tout en assurant un look moderne et sportif. Idéales pour un usage quotidien ou pour le skate."
 	},
 	{
 		"id": 16,
@@ -237,7 +252,8 @@
 			"id": 1,
 			"type": "choice",
 			"text": "Choix <span>d'Omazon</span>"
-		}
+		},
+		"description": "Ces espadrilles à talon compensé de Tommy Hilfiger pour femme offrent un mélange parfait de confort et de style. Avec leur semelle compensée, elles sont idéales pour une allure élégante tout en restant décontractée, parfaites pour les journées d'été."
 	},
 	{
 		"id": 17,
@@ -254,7 +270,8 @@
 			"id": 2,
 			"type": "new",
 			"text": "Nouveauté"
-		}
+		},
+		"description": "Le barbecue à charbon Weber Compact Kettle de 47 cm est parfait pour les amateurs de grillades en plein air. Son design compact et robuste en fait un choix idéal pour les petits espaces, tandis que sa vasque en porcelaine émaillée assure une cuisson uniforme."
 	},
 	{
 		"id": 18,
@@ -267,7 +284,8 @@
 			"slug": "jardin",
 			"image": "jardin.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le kit barbecue Edihome est un ensemble complet de 25 ustensiles en acier inoxydable pour les amateurs de grillades. Parfait pour les barbecues en famille ou entre amis, il est présenté dans un étui pratique, idéal pour un cadeau ou pour transporter vos outils partout."
 	},
 	{
 		"id": 19,
@@ -280,7 +298,8 @@
 			"slug": "jardin",
 			"image": "jardin.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le nettoyeur haute pression Kärcher K 2 Universal Edition est l'outil parfait pour nettoyer vos espaces extérieurs. Compact et léger, il offre une pression maximale de 110 bar pour éliminer la saleté tenace, avec une portée de 20 m²/h. Idéal pour le jardin et les véhicules."
 	},
 	{
 		"id": 20,
@@ -293,7 +312,8 @@
 			"slug": "jardin",
 			"image": "jardin.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Cette tondeuse à gazon filaire BLACK+DECKER de 1000W est idéale pour les jardins de petite à moyenne taille. Avec ses trois hauteurs de coupe réglables et sa conception légère, elle est facile à manœuvrer et assure une coupe précise et uniforme."
 	},
 	{
 		"id": 21,
@@ -306,7 +326,8 @@
 			"slug": "jeux",
 			"image": "jeux.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le surfskate BTFL Cody 2024 est parfait pour les amateurs de glisse. Ce longboard de haute qualité offre une sensation de surf unique sur le bitume, idéal pour les sessions de ride en ville ou au bord de la plage."
 	},
 	{
 		"id": 22,
@@ -319,7 +340,8 @@
 			"slug": "jeux",
 			"image": "jeux.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le LEGO Star Wars Millennium Falcon est un set de collection incontournable pour les fans de la saga. Ce modèle détaillé est idéal pour la décoration intérieure ou comme pièce de collection. Un cadeau parfait pour les passionnés de Star Wars."
 	},
 	{
 		"id": 23,
@@ -332,7 +354,8 @@
 			"slug": "jeux",
 			"image": "jeux.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le jeu de quilles nordiques Wdk Partner est un excellent choix pour des heures de plaisir en plein air. Facile à transporter, ce jeu multicolore est parfait pour toute la famille, offrant un divertissement sain et amusant."
 	},
 	{
 		"id": 24,
@@ -345,7 +368,8 @@
 			"slug": "jeux",
 			"image": "jeux.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le Nerf Elite 2.0 Blaster motorisé Double Punch est parfait pour des batailles Nerf passionnantes. Avec ses canons alternatifs rapides et ses 50 fléchettes incluses, ce blaster garantit des heures de jeu pour les enfants dès 8 ans."
 	},
 	{
 		"id": 25,
@@ -358,7 +382,8 @@
 			"slug": "jeux",
 			"image": "jeux.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Le jeu de cartes ZENAGAME Le Traquenard est idéal pour pimenter vos soirées entre amis. Avec 300 cartes fun et hilarantes, ce jeu de société pour adultes est parfait pour des moments de détente ou des défis endiablés."
 	},
 	{
 		"id": 26,
@@ -371,7 +396,8 @@
 			"slug": "jeux-videos",
 			"image": "jeux-videos.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "Stellar Blade sur PlayStation 5 est un jeu vidéo captivant qui plonge les joueurs dans un univers futuriste rempli d'action et de mystère. Avec des graphismes époustouflants et une jouabilité immersive, ce jeu est un incontournable pour tous les amateurs de science-fiction."
 	},
 	{
 		"id": 27,
@@ -388,7 +414,8 @@
 			"id": 1,
 			"type": "choice",
 			"text": "Choix <span>d'Omazon</span>"
-		}
+		},
+		"description": "La manette sans fil DualSense™ de Sony pour PlayStation 5 offre une expérience de jeu révolutionnaire grâce à ses retours haptiques et ses gâchettes adaptatives. Compatible avec la PS5 et le PC, cette manette rechargeable est un choix parfait pour les gamers exigeants."
 	},
 	{
 		"id": 28,
@@ -401,7 +428,8 @@
 			"slug": "jeux-videos",
 			"image": "jeux-videos.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "La Nintendo Switch est une console de jeu hybride qui permet de jouer où que vous soyez. Avec ses Joy-Con bleu néon et rouge néon, elle offre une expérience de jeu flexible, parfaite pour les sessions en solo ou entre amis, en mode portable ou sur grand écran."
 	},
 	{
 		"id": 29,
@@ -414,7 +442,8 @@
 			"slug": "jeux-videos",
 			"image": "jeux-videos.webp"
 		},
-		"tag": null
+		"tag": null,
+		"description": "The Legend of Zelda : Tears of the Kingdom est le dernier opus de la célèbre saga. Ce jeu d'aventure sur Nintendo Switch offre une histoire immersive et un monde ouvert riche en découvertes, parfait pour les fans de la série comme pour les nouveaux venus."
 	},
 	{
 		"id": 30,
@@ -427,7 +456,8 @@
 			"slug": "livres",
 			"image": "livres.webp"
 		},
-		"tag": 0
+		"tag": 0,
+		"description": "Voice Content and Usability explore les meilleures pratiques pour la création de contenus vocaux accessibles et intuitifs. Ce livre est une ressource essentielle pour les développeurs et concepteurs cherchant à améliorer l'expérience utilisateur dans le domaine de l'accessibilité."
 	},
 	{
 		"id": 31,
@@ -440,7 +470,8 @@
 			"slug": "livres",
 			"image": "livres.webp"
 		},
-		"tag": 0
+		"tag": 0,
+		"description": "H2G2 : L'intégrale de la trilogie en cinq volumes regroupe l'œuvre culte de Douglas Adams. Ce coffret est un must pour tous les amateurs de science-fiction et d'humour britannique, offrant une aventure inoubliable à travers l'univers."
 	},
 	{
 		"id": 32,
@@ -457,6 +488,7 @@
 			"id": 2,
 			"type": "new",
 			"text": "Nouveauté"
-		}
+		},
+		"description": "Learning React est un guide complet pour maîtriser les concepts et les meilleures pratiques du développement d'applications avec React. Idéal pour les développeurs débutants et intermédiaires, ce livre couvre tout ce qu'il faut savoir pour créer des applications modernes avec ce framework populaire."
 	}
 ]

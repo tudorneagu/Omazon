@@ -8,7 +8,7 @@ function LoginForm() {
 	return (
 		<>
 			<div className=" absolute top-12 right-0 bg-white drop-shadow-md rounded-sm border border-main-lower max-w-screen-sm  flex flex-col items-center py-6">
-				<div className=" absolute z-10 -top-2 right-[200px] bg-main-lowest rotate-45 h-4 w-4 " />
+				<div className=" absolute z-10 -top-2 right-[180px] bg-main-lowest rotate-45 h-4 w-4 " />
 				<form className="w-[500px] flex flex-col items-center gap-6">
 					<label className="flex flex-col gap-3 w-[216px]">
 						Adresse e-mail

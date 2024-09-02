@@ -16,6 +16,8 @@ export interface IProduct {
 	title: string;
 	price: number;
 	image: string;
+	quantity: number;
 	category: ICategory;
 	tag: ITag | null;
+	description: string;
 }
