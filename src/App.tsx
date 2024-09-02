@@ -7,6 +7,7 @@ import { AuthProvider } from "./components/contexts/AuthContext";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import { CartProvider } from "./components/contexts/CartContext";
+import CartPage from "./pages/CartPage";
 
 function App() {
 	return (
@@ -14,15 +15,21 @@ function App() {
 			<AuthProvider>
 				<CartProvider>
 					<Header />
-					<main>
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route
-								path="/category/:categoryTitle/products"
-								element={<CategoryPage />}
-							/>
-							<Route path="/product/:productTitle" element={<ProductPage />} />
-						</Routes>
+					<main className="flex justify-around">
+						<div className="max-w-[1600px] ">
+							<Routes>
+								<Route path="/" element={<Home />} />
+								<Route
+									path="/category/:categoryTitle/products"
+									element={<CategoryPage />}
+								/>
+								<Route
+									path="/product/:productTitle"
+									element={<ProductPage />}
+								/>
+								<Route path="/cart" element={<CartPage />} />
+							</Routes>
+						</div>
 					</main>
 					<Footer />
 				</CartProvider>

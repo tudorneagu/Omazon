@@ -1,16 +1,11 @@
-import type { ITag } from "../@types/index.types";
-
-interface TagsProps {
-	tag: ITag;
-}
 function Tag({ tag }: TagsProps) {
 	const renderTagContent = () => {
 		switch (tag.type) {
 			case "choice":
 				return (
-					<div className="relative">
+					<div className="relative overflow-hidden inline-block">
 						<div className="absolute -left-2 bg-main-high w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<div
+						<p
 							className="relative text-main-lowest text-s-regular px-2 choice-tag-orange"
 							dangerouslySetInnerHTML={{ __html: tag.text }}
 						/>
@@ -18,29 +13,29 @@ function Tag({ tag }: TagsProps) {
 				);
 			case "new":
 				return (
-					<div className="relative">
+					<div className="relative overflow-hidden inline-block">
 						<div className="absolute -left-2 -z-10 bg-brand-grey w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<div className=" text-main-lowest text-s-regular w-[127px] px-2 ">
+						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
 							{tag.text}
-						</div>
+						</p>
 					</div>
 				);
 			case "best-seller":
 				return (
-					<div className="relative">
+					<div className="relative overflow-hidden inline-block">
 						<div className="absolute -left-2 -z-10 bg-brand-primary w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<div className=" text-main-lowest text-s-regular w-[127px] px-2 ">
+						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
 							{tag.text}
-						</div>
+						</p>
 					</div>
 				);
 			case "flash":
 				return (
-					<div className="relative">
+					<div className="relative overflow-hidden inline-block">
 						<div className="absolute -left-2 -z-10 bg-danger-medium w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<div className=" text-main-lowest text-s-regular w-[127px] px-2 ">
+						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
 							{tag.text}
-						</div>
+						</p>
 					</div>
 				);
 			default:
@@ -48,7 +43,7 @@ function Tag({ tag }: TagsProps) {
 		}
 	};
 
-	return <div className="absolute top-0 left-0">{renderTagContent()}</div>;
+	return <div className="inline-block">{renderTagContent()}</div>;
 }
 
 export default Tag;

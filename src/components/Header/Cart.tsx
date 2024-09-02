@@ -1,9 +1,20 @@
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
+import { useNavigate } from "react-router-dom";
 function Cart() {
 	const { cart } = useContext(CartContext);
+	const navigate = useNavigate();
+
+	const handleCartClick = () => {
+		navigate(`/cart/`);
+	};
+
 	return (
-		<button type="button" className="flex items-end relative">
+		<button
+			type="button"
+			className="flex items-end relative"
+			onClick={handleCartClick}
+		>
 			<p className="absolute top-0 left-[18px] text-brand-primary">
 				{cart.length}
 			</p>
