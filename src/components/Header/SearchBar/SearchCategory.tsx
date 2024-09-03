@@ -1,10 +1,20 @@
 import { useContext } from "react";
-import { ProductContext } from "../../contexts/ProductContext";
+import { ProductContext } from "../../../contexts/ProductContext";
 import { Link, useNavigate } from "react-router-dom";
+
+interface Category {
+	id: number;
+	title: string;
+}
+
+interface ProductContextType {
+	categories: Category[];
+}
+
 function SearchCategory() {
-	const { categories } = useContext(ProductContext);
+	const { categories } = useContext<ProductContextType>(ProductContext);
 	const navigate = useNavigate();
-	const handleCategoryClick = () => {
+	const handleCategoryClick = (category: Category) => {
 		navigate(`/category/${category.title}/products`);
 	};
 
@@ -14,11 +24,11 @@ function SearchCategory() {
 				Toutes nos catégories
 			</option>
 
-			{categories.map((category) => (
+			{categories.map((category: Category) => (
 				<option key={category.id} value={category.id}>
 					<Link
 						to={`/category/${category.title}/products`}
-						onChange={handleCategoryClick}
+						onClick={() => handleCategoryClick(category)}
 					>
 						{category.title}
 					</Link>

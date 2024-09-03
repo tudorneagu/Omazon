@@ -17,7 +17,7 @@ function ProductPage() {
 		<div className="p-6 flex gap-12">
 			<div className="h-[330px] w-screen flex justify-center items-center bg-black/5">
 				<img
-					className="h-[330px] w-auto object-contain -z-10"
+					className="h-[330px] min-w-[330px] object-contain -z-10"
 					src={`/assets/products/${product?.image}`}
 					alt={product?.title || "product"}
 				/>
@@ -35,7 +35,7 @@ function ProductPage() {
 					<AddButton product={product} />
 				</div>
 				{product.description && (
-					<p className="text-m-regular">{product.description}</p>
+					<p className="text-m-regular ">{product.description}</p>
 				)}
 			</div>
 		</div>

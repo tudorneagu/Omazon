@@ -15,11 +15,16 @@ function ProductCard({ product, showTag = true }: ProductCardProps) {
 	const handleProductsClick = () => {
 		navigate(`/product/${product.title}`);
 	};
+
 	return (
 		<div className="overflow-hidden relative border w-[330px] h-[518px] border-main-lower flex flex-col">
 			<Link to={`/product/${product.title}`} onClick={handleProductsClick}>
-				{showTag && product.tag !== null ? <Tag tag={product.tag} /> : ""}
-				<div className="h-[330px] w-[330px] flex justify-center items-center bg-black/5">
+				<div className="relative h-[330px] w-[330px] flex justify-center items-center bg-black/5">
+					{showTag && product.tag !== null && (
+						<div className="absolute top-0 left-2">
+							<Tag tag={product.tag} />
+						</div>
+					)}
 					<img
 						className="h-[220px] w-auto object-contain -z-10"
 						src={`/assets/products/${product?.image}`}

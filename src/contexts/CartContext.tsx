@@ -1,10 +1,17 @@
-import { createContext, useState } from "react";
-import type { IProduct } from "../../@types/index.types";
+import { createContext, useEffect, useState } from "react";
+import type { IProduct } from "../@types/index.types";
+
 const CartContext = createContext();
 
 function CartProvider({ children }: { children: React.ReactNode }) {
-	const [cart, setCart] = useState<IProduct[]>([]);
+	const [cart, setCart] = useState<IProduct[]>(
+		JSON.parse(localStorage.getItem("cart") || "[]"),
+	);
 	console.log(cart);
+
+	useEffect(() => {
+		localStorage.setItem("cart", JSON.stringify(cart));
+	}, [cart]);
 
 	const handleAdd = (product: IProduct) => {
 		setCart((prevCart) => {

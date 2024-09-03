@@ -1,7 +1,5 @@
-import Button from "../ui/Buttons/AddButton";
 import Tag from "../Tags";
 import type { IProduct } from "../../@types/index.types";
-import FormatPrice from "../utils/FormatPrice";
 import { Link, useNavigate } from "react-router-dom";
 
 interface CartProductProps {
@@ -34,12 +32,11 @@ function CartProduct({ product, showTag = true }: CartProductProps) {
 							{product?.title || "Produit sans nom"}
 						</h3>
 					</Link>
-					<div className="flex items-center text-s-regular  gap-2">
-						<div className="relative">
-							{showTag && product.tag !== null ? <Tag tag={product.tag} /> : ""}
-						</div>
+					<div className="flex text-s-regular overflow-hidden">
+						{showTag && product.tag ? <Tag tag={product.tag} /> : ""}
+
 						<p>dans la Categorie </p>
-						<p className="text-info-high">{product.category.title}</p>
+						<p className="text-info-high pl-4">{product.category.title}</p>
 					</div>
 					{product.inStock ? (
 						<p className="text-green-600 text-s-regular">En Stock</p>
@@ -51,7 +48,7 @@ function CartProduct({ product, showTag = true }: CartProductProps) {
 				</header>
 				<main className="text-s-regular">
 					<input type="checkbox" name="gift-product" />
-					<label for="gift-product">Ceci sera un cadeau</label>
+					<label htmlFor="gift-product">Ceci sera un cadeau</label>
 					<p>En savoir plus</p>
 				</main>
 				<footer className="flex text-s-regular text-info-medium">

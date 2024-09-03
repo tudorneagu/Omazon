@@ -1,11 +1,5 @@
 import { createContext, useState, useRef, useEffect } from "react";
 
-interface AuthContextProps {
-	loginForm: boolean;
-	setLoginForm: React.Dispatch<React.SetStateAction<boolean>>;
-	emailRef: React.RefObject<HTMLInputElement>;
-}
-
 const AuthContext = createContext();
 
 function AuthProvider({ children }: { children: React.ReactNode }) {

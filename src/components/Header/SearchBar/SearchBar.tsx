@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../../contexts/ProductContext";
+import { ProductContext } from "../../../contexts/ProductContext";
 
 import SearchCategory from "./SearchCategory";
 import SearchField from "./SearchField";

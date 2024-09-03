@@ -4,8 +4,14 @@ import products from "../data/products.json";
 import tags from "../data/tags.json";
 import type { ICategory, IProduct, ITag } from "../@types/index.types";
 
-interface ProductContextProps {
-	categories: ICategory[];
+export interface Category {
+	id: number;
+	title: string;
+}
+
+export interface ProductContextType {
+	categories: Category[];
+
 	products: IProduct[];
 	tags: ITag[];
 	searchQuery: string | null;
@@ -13,7 +19,7 @@ interface ProductContextProps {
 	searchInput: React.RefObject<HTMLInputElement>;
 }
 
-const ProductContext = createContext<ProductContextProps>();
+const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 function ProductProvider({ children }: { children: React.ReactNode }) {
 	const [searchQuery, setSearchQuery] = useState<string | null>("");

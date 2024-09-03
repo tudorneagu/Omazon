@@ -3,10 +3,10 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 
-import { AuthProvider } from "./components/contexts/AuthContext";
+import { AuthProvider } from "./contexts/AuthContext";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import { CartProvider } from "./components/contexts/CartContext";
+import { CartProvider } from "./contexts/CartContext";
 import CartPage from "./pages/CartPage";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 				<CartProvider>
 					<Header />
 					<main className="flex justify-around">
-						<div className="max-w-[1600px] ">
+						<div className="max-w-[1600px] w-full">
 							<Routes>
 								<Route path="/" element={<Home />} />
 								<Route

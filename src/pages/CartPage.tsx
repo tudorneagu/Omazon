@@ -1,11 +1,19 @@
 import { useContext } from "react";
 import ButtonRounded from "../components/ui/Buttons/ButtonRounded";
-import { CartContext } from "../components/contexts/CartContext";
+import { CartContext } from "../contexts/CartContext";
 import CartProduct from "../components/Products/CartProduct";
+import type { IProduct } from "../@types/index.types";
+
+interface CartContextType {
+	cart: IProduct[];
+}
 
 function CartPage() {
-	const { cart } = useContext(CartContext);
-	const totalCartPrice = cart.reduce((acc, product) => acc + product.price, 0);
+	const { cart } = useContext(CartContext) as CartContextType;
+	const totalCartPrice = cart.reduce(
+		(acc: number, product: IProduct) => acc + product.price,
+		0,
+	);
 
 	return (
 		<div className="flex gap-4 my-10">
@@ -26,7 +34,7 @@ function CartPage() {
 					<p>Prix</p>
 				</header>
 				<main className="flex flex-col gap-4">
-					{cart.map((product) => (
+					{cart.map((product: IProduct) => (
 						<CartProduct product={product} key={product.id} />
 					))}
 				</main>
@@ -63,7 +71,7 @@ function CartPage() {
 					<ButtonRounded>Passer la commande</ButtonRounded>
 				</section>
 			) : (
-				<section className="w-80 pb-10 p-4 flex flex-col h-min"></section>
+				<section className="w-80 pb-10 p-4 flex flex-col h-min" />
 			)}
 		</div>
 	);

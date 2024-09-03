@@ -1,6 +1,6 @@
 import CategoryCard from "./CategoryCard";
 import { useContext } from "react";
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 import type { ICategory } from "../../@types/index.types";
 
 function Categories() {
@@ -9,7 +9,7 @@ function Categories() {
 	return (
 		<section className="flex  flex-col gap-6 ">
 			<h1 className="heading-m">Categories à l'honneur</h1>
-			<div className="flex flex-wrap  gap-5 justify-between  ">
+			<div className="flex flex-wrap  gap-8   ">
 				{categories.length > 0 ? (
 					categories.map((category: ICategory) => (
 						<div key={category.id}>

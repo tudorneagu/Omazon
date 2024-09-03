@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { CartContext } from "../contexts/CartContext";
+import { CartContext } from "../../contexts/CartContext";
 import { useNavigate } from "react-router-dom";
+import type { ICart } from "../../@types/index.types";
 function Cart() {
-	const { cart } = useContext(CartContext);
+	const { cart }: ICart = useContext(CartContext);
 	const navigate = useNavigate();
 
 	const handleCartClick = () => {
-		navigate(`/cart/`);
+		navigate("/cart/");
 	};
 
 	return (

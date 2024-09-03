@@ -61,11 +61,26 @@
     @apply text-[10px] font-normal;
   }
 
-  .choice-tag-orange span {
-    color: #ff9900; /* Example styling */
-    font-weight: normal;
+  .tag {
+    @apply relative top-0 left-0 text-main-lowest text-s-regular px-3
   }
 
+  
+  .tag-choice {
+    background-color: #232f3e;
+  }
+  
+  .tag-new {
+    background-color: #6f7373;
+  }
+  
+  .tag-flash {
+    background-color: #cc0c39;
+  }
+  
+  .tag-best-seller {
+    background-color: #ff9900;
+  }
   
 }
 

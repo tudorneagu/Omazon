@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import type { IProduct } from "../../@types/index.types";
 import { useContext } from "react";
-import { ProductContext } from "../contexts/ProductContext";
+import { ProductContext } from "../../contexts/ProductContext";
 
 function Products() {
 	const { products } = useContext(ProductContext);

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { CartContext } from "../../contexts/CartContext";
-import type { IProduct } from "../../@types/index.types";
+import { CartContext } from "../../../contexts/CartContext";
+import type { IProduct } from "../../../@types/index.types";
 
 interface AddButtonProps {
 	product: IProduct;

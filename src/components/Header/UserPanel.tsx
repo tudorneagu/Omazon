@@ -1,7 +1,7 @@
 import LoginForm from "../ui/Modals/LoginForm";
 import Account from "./Account";
 import Cart from "./Cart";
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 import { useContext } from "react";
 
 function UserPanel() {

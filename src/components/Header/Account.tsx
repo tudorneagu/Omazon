@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 
 function Account() {
 	const { loginForm, setLoginForm, focusEmailInput } = useContext(AuthContext);

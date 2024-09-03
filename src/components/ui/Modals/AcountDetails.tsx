@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../Buttons/Button";
-import { AuthContext } from "../../contexts/AuthContext";
+
+import { AuthContext } from "../../../contexts/AuthContext";
 import { useContext } from "react";
 
 function LoginForm() {
@@ -14,7 +14,7 @@ function LoginForm() {
 						<img
 							className="z-10 w-11 h-11 fill-white "
 							src="./assets/icons/user.svg"
-							alt="user profile image"
+							alt="user profile thumbnail"
 						/>
 					</div>
 					<div>

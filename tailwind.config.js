@@ -71,5 +71,6 @@ export default {
 			},
 		},
 		plugins: [],
+		safelist: ["tag-choice", "tag-new", "tag-best-seller", "tag-flash"],
 	},
 };

@@ -1,49 +1,27 @@
-function Tag({ tag }: TagsProps) {
-	const renderTagContent = () => {
-		switch (tag.type) {
-			case "choice":
-				return (
-					<div className="relative overflow-hidden inline-block">
-						<div className="absolute -left-2 bg-main-high w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<p
-							className="relative text-main-lowest text-s-regular px-2 choice-tag-orange"
-							dangerouslySetInnerHTML={{ __html: tag.text }}
-						/>
-					</div>
-				);
-			case "new":
-				return (
-					<div className="relative overflow-hidden inline-block">
-						<div className="absolute -left-2 -z-10 bg-brand-grey w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
-							{tag.text}
-						</p>
-					</div>
-				);
-			case "best-seller":
-				return (
-					<div className="relative overflow-hidden inline-block">
-						<div className="absolute -left-2 -z-10 bg-brand-primary w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
-							{tag.text}
-						</p>
-					</div>
-				);
-			case "flash":
-				return (
-					<div className="relative overflow-hidden inline-block">
-						<div className="absolute -left-2 -z-10 bg-danger-medium w-[127px] h-full transform skew-x-[-35deg] origin-right right-0" />
-						<p className="relative text-main-lowest text-s-regular w-[127px] px-2">
-							{tag.text}
-						</p>
-					</div>
-				);
-			default:
-				return null;
-		}
-	};
+import type { ITag } from "../@types/index.types";
 
-	return <div className="inline-block">{renderTagContent()}</div>;
+interface TagProps {
+	tag: ITag;
 }
+
+const Tag = ({ tag }: TagProps) => {
+	return (
+		<div
+			className=" top-0 -left-7 w-[180px] overflow-hidden relative
+		 ml-5 "
+		>
+			<div
+				className={`absolute tag-${tag.type} w-[150px] h-full transform skew-x-[-35deg] origin-top-left inline-block`}
+			/>
+			{tag.type === "choice" ? (
+				<p className="tag w-[180px] ">
+					Choix <span className="text-brand-primary">d'Omazon</span>
+				</p>
+			) : (
+				<p className="tag">{tag.text}</p>
+			)}
+		</div>
+	);
+};
 
 export default Tag;

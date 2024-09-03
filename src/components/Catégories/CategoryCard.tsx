@@ -25,7 +25,7 @@ function CategoryCard({ category }: CategoryProps) {
 					alt={category.title}
 				/>
 			</div>
-			<h2 className="heading-s text-main-highest">{category.title}</h2>
+			<h2 className="heading-s text-main-highest mb-6">{category.title}</h2>
 		</Link>
 	);
 }

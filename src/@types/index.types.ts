@@ -20,4 +20,9 @@ export interface IProduct {
 	category: ICategory;
 	tag: ITag | null;
 	description: string;
+	inStock: boolean;
+}
+
+export interface ICart {
+	product: IProduct[];
 }
