@@ -1,6 +1,9 @@
 import Tag from "../Tags";
 import type { IProduct } from "../../@types/index.types";
 import { Link, useNavigate } from "react-router-dom";
+import { CartContext } from "../../contexts/CartContext";
+import { useContext } from "react";
+import type { CartContextType } from "../../@types/index.types";
 
 interface CartProductProps {
 	product: IProduct;
@@ -8,10 +11,18 @@ interface CartProductProps {
 }
 
 function CartProduct({ product, showTag = true }: CartProductProps) {
+	const { handleRemove, updateQuantityProduct } = useContext(
+		CartContext,
+	) as CartContextType;
 	const navigate = useNavigate();
 
 	const handleProductsClick = () => {
 		navigate(`/product/${product.title}`);
+	};
+
+	const handleQuantityChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+		const newQuantity = Number.parseInt(e.target.value, 10);
+		updateQuantityProduct(product.id, newQuantity);
 	};
 	return (
 		<div className="overflow-hidden flex py-4 pl-4 gap-4 border-b border-main-low">
@@ -46,20 +57,32 @@ function CartProduct({ product, showTag = true }: CartProductProps) {
 						</p>
 					)}
 				</header>
-				<main className="text-s-regular">
-					<input type="checkbox" name="gift-product" />
-					<label htmlFor="gift-product">Ceci sera un cadeau</label>
+				<main className="text-s-regular ">
+					<div className="flex items-center gap-2">
+						<input type="checkbox" name="gift-product" />
+						<label htmlFor="gift-product">Ceci sera un cadeau</label>
+					</div>
 					<p>En savoir plus</p>
 				</main>
 				<footer className="flex text-s-regular text-info-medium">
-					<select className="mr-4">
+					<select
+						className="mr-4"
+						value={product.quantity}
+						onChange={handleQuantityChange}
+					>
 						{Array.from({ length: 10 }, (_, i) => i + 1).map((number) => (
 							<option key={number} value={number}>
 								{number}
 							</option>
 						))}
 					</select>
-					<p className="border-l border-main-low pl-4 ml-4">Supprimer</p>
+					<button
+						type="button"
+						className="border-l border-main-low pl-4 ml-4"
+						onClick={() => handleRemove(product)}
+					>
+						Supprimer
+					</button>
 					<p className="border-l border-main-low pl-4 ml-4">Mettre de côté</p>
 					<p className="border-l border-main-low pl-4 ml-4">
 						Voir plus de produits similaires

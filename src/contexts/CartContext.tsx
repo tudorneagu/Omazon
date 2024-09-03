@@ -12,7 +12,11 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
 		localStorage.setItem("cart", JSON.stringify(cart));
 	}, [cart]);
-
+	const updateQuantityProduct = (id: number, quantity: number) => {
+		setCart((prevCart) =>
+			prevCart.map((item) => (item.id === id ? { ...item, quantity } : item)),
+		);
+	};
 	const handleAdd = (product: IProduct) => {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find((item) => item.id === product.id);
@@ -27,8 +31,32 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 		});
 	};
 
+	const handleRemove = (product: IProduct) => {
+		setCart((prevCart) => {
+			const existingItem = prevCart.find((item) => item.id === product.id);
+			if (existingItem) {
+				if (existingItem.quantity === 1) {
+					return prevCart.filter((item) => item.id !== product.id);
+				}
+				return prevCart.map((item) =>
+					item.id === product.id
+						? { ...item, quantity: item.quantity - 1 }
+						: item,
+				);
+			}
+			return prevCart;
+		});
+	};
+
 	return (
-		<CartContext.Provider value={{ cart: cart, handleAdd: handleAdd }}>
+		<CartContext.Provider
+			value={{
+				cart: cart,
+				updateQuantityProduct: updateQuantityProduct,
+				handleAdd: handleAdd,
+				handleRemove: handleRemove,
+			}}
+		>
 			{children}
 		</CartContext.Provider>
 	);

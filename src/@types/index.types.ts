@@ -26,3 +26,8 @@ export interface IProduct {
 export interface ICart {
 	product: IProduct[];
 }
+
+export type CartContextType = {
+	handleRemove: (product: IProduct) => void;
+	updateQuantityProduct: (productId: string, quantity: number) => void;
+};

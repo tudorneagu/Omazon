@@ -11,7 +11,7 @@ interface CartContextType {
 function CartPage() {
 	const { cart } = useContext(CartContext) as CartContextType;
 	const totalCartPrice = cart.reduce(
-		(acc: number, product: IProduct) => acc + product.price,
+		(acc: number, product: IProduct) => acc + product.price * product.quantity,
 		0,
 	);
 
