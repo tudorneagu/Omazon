@@ -1,4 +1,4 @@
-import { createContext, useState, useRef } from "react";
+import { createContext, useState, useRef, useEffect } from "react";
 import categories from "../data/categories.json";
 import products from "../data/products.json";
 import tags from "../data/tags.json";

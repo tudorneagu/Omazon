@@ -19,7 +19,7 @@ function SearchCategory() {
 	};
 
 	return (
-		<select className="appearance-none w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
+		<select className=" w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
 			<option selected disabled>
 				Toutes nos catégories
 			</option>

@@ -82,13 +82,16 @@
     background-color: #ff9900;
   }
   
-}
+  .dropShadow {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+  }
 
+
+}
 @layer utilities {
-.dropShadow {
-  box-shadow: "0 2px 4px 0 rgba(0,0,0,0.13)",
-
-}
+  .dropShadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  }
 
   .outline-default {
     box-shadow: 

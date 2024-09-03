@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import products from "../data/products.json";
 import AddButton from "../components/ui/Buttons/AddButton";
@@ -8,6 +9,9 @@ function ProductPage() {
 
 	const product = products.find((product) => product.title === productTitle);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	console.log(product);
 	if (!product) {
 		return <p>Erreur, le produit n'a pas été trouvé </p>;

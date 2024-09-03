@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import ButtonRounded from "../components/ui/Buttons/ButtonRounded";
 import { CartContext } from "../contexts/CartContext";
 import CartProduct from "../components/Products/CartProduct";
@@ -14,6 +14,10 @@ function CartPage() {
 		(acc: number, product: IProduct) => acc + product.price * product.quantity,
 		0,
 	);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="flex gap-4 my-10">

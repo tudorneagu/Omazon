@@ -17,6 +17,13 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 			prevCart.map((item) => (item.id === id ? { ...item, quantity } : item)),
 		);
 	};
+
+	useEffect(() => {
+		if (cart.length > 0) {
+			document.title = `Omazon - panier : ${cart.length} produits`;
+		} else document.title = "Omazon ";
+	}, [cart]);
+
 	const handleAdd = (product: IProduct) => {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find((item) => item.id === product.id);

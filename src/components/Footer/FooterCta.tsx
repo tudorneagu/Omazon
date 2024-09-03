@@ -1,6 +1,10 @@
+import { AddProductContext } from "../../contexts/AddProductContext";
 import Logo from "../Header/Logo";
-import FooterButton from "../ui/Buttons/Button";
+import Button from "../ui/Buttons/Button";
+import { useContext } from "react";
+
 function FooterCta() {
+	const { onOpen } = useContext(AddProductContext);
 	return (
 		<div className="flex flex-col justify-center items-center bg-main-high ">
 			<div className="flex flex-col justify-center items-center gap-6 text-main-lowest py-12">
@@ -13,9 +17,9 @@ function FooterCta() {
 					<br /> Rejoignez notre communauté de vendeurs dès aujourd'hui !
 				</p>
 
-				<FooterButton>
+				<Button onClick={onOpen}>
 					<p className="text-main-low">Devenez vendeur sur Omazon</p>
-				</FooterButton>
+				</Button>
 			</div>
 			<div className="w-screen flex items-center justify-center h-20  border-t-brand-grey border-t">
 				<Logo />
