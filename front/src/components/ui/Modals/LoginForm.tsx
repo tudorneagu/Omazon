@@ -27,9 +27,11 @@ function LoginForm() {
 							className="border p-2 rounded-lg border-brand-grey text-brand-grey text-m-regular"
 						/>
 					</label>
-					<Button>
-						<p className="px-12">Identifiez-vous</p>
-					</Button>
+					<div>
+						<Button>
+							<p className="px-12">Identifiez-vous</p>
+						</Button>
+					</div>
 				</form>
 				<div className="text-xs-regular flex gap-1 mt-4">
 					<p>Nouveau client?</p>{" "}

@@ -7,7 +7,7 @@ function SearchField() {
 	const handleSearchQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setSearchQuery(e.target.value);
 	};
-	console.log(searchQuery);
+
 	return (
 		<input
 			className="flex-grow px-3 text-m-regular text-main-highest placeholder:text-m-regular"

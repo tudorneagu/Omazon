@@ -8,7 +8,7 @@ import SearchResults from "./SearchResults";
 
 function SearchBar() {
 	const { searchQuery } = useContext(ProductContext);
-	console.log(searchQuery);
+
 	return (
 		<form className="flex-grow flex h-9  ">
 			<SearchCategory />

@@ -19,19 +19,17 @@ function SearchCategory() {
 	};
 
 	return (
-		<select className=" w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg">
-			<option selected disabled>
+		<select
+			defaultValue=""
+			className=" w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg"
+		>
+			<option value="" disabled>
 				Toutes nos catégories
 			</option>
 
 			{categories.map((category: Category) => (
 				<option key={category.id} value={category.id}>
-					<Link
-						to={`/category/${category.title}/products`}
-						onClick={() => handleCategoryClick(category)}
-					>
-						{category.title}
-					</Link>
+					{category.title}
 				</option>
 			))}
 		</select>
