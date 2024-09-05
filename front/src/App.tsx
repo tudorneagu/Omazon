@@ -14,7 +14,7 @@ import { AddProductContext } from "./contexts/AddProductContext";
 function App() {
 	const { isModalOpen } = useContext(AddProductContext);
 	return (
-		<BrowserRouter>
+		<>
 			<Header />
 			<main className="flex justify-around">
 				{isModalOpen && <AddProduct />}
@@ -31,7 +31,7 @@ function App() {
 				</div>
 			</main>
 			<Footer />
-		</BrowserRouter>
+		</>
 	);
 }
 

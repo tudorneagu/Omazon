@@ -1,8 +1,9 @@
 import { createContext, useState, useRef, useEffect } from "react";
-import categories from "../data/categories.json";
-import products from "../data/products.json";
-import tags from "../data/tags.json";
+
 import type { ICategory, IProduct, ITag } from "../@types/index.types";
+import { fetchProducts } from "../services/productService";
+import { fetchCategories } from "../services/categoryService";
+import { fetchTags } from "../services/tagService";
 
 export interface Category {
 	id: number;
@@ -11,7 +12,6 @@ export interface Category {
 
 export interface ProductContextType {
 	categories: Category[];
-
 	products: IProduct[];
 	tags: ITag[];
 	searchQuery: string | null;
@@ -22,8 +22,35 @@ export interface ProductContextType {
 const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 function ProductProvider({ children }: { children: React.ReactNode }) {
+	const [products, setProducts] = useState([]);
+	const [categories, setCategories] = useState([]);
+	const [tags, setTags] = useState([]);
 	const [searchQuery, setSearchQuery] = useState<string | null>("");
 	const searchInput = useRef(null);
+
+	useEffect(() => {
+		const getProducts = async () => {
+			const data = await fetchProducts();
+			setProducts(data);
+		};
+		getProducts();
+	}, []);
+
+	useEffect(() => {
+		const getCategories = async () => {
+			const data = await fetchCategories();
+			setCategories(data);
+		};
+		getCategories();
+	}, []);
+
+	useEffect(() => {
+		const getTags = async () => {
+			const data = await fetchTags();
+			setTags(data);
+		};
+		getTags();
+	}, []);
 
 	return (
 		<ProductContext.Provider

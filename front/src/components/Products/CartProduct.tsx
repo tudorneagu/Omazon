@@ -44,7 +44,7 @@ function CartProduct({ product, showTag = true }: CartProductProps) {
 						</h3>
 					</Link>
 					<div className="flex text-s-regular overflow-hidden">
-						{showTag && product.tag ? <Tag tag={product.tag} /> : ""}
+						{showTag && product.tags ? <Tag tag={product.tags} /> : ""}
 
 						<p>dans la Categorie </p>
 						<p className="text-info-high pl-4">{product.category.title}</p>

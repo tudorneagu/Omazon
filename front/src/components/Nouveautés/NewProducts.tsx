@@ -2,6 +2,7 @@ import ProductCard from "../Products/ProductCard";
 
 import { useContext } from "react";
 import { ProductContext } from "../../contexts/ProductContext";
+import type { IProduct } from "../../@types/index.types";
 
 function NewProducts() {
 	const { products } = useContext(ProductContext);
@@ -11,8 +12,8 @@ function NewProducts() {
 			<div className="flex gap-6 flex-wrap ">
 				{products.length > 0 ? (
 					products
-						.filter((product) => product.tag?.type === "new")
-						.map((product) => (
+						.filter((product: IProduct) => product.tags?.type === "new")
+						.map((product: IProduct) => (
 							<div key={product.id}>
 								<ProductCard product={product} showTag={false} />
 							</div>

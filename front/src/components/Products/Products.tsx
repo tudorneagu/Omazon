@@ -6,7 +6,7 @@ import { ProductContext } from "../../contexts/ProductContext";
 function Products({ categoryTitle }) {
 	const { products } = useContext(ProductContext);
 	const filteredProducts = products.filter(
-		(product) => product.category.title === categoryTitle,
+		(product: IProduct) => product.categories.title === categoryTitle,
 	);
 
 	return (

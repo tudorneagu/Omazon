@@ -12,4 +12,7 @@ router.route("/categories").get(controllerWrapper(Categories.getAll));
 router.route("/products").get(controllerWrapper(Products.getAll));
 router.route("/tags").get(controllerWrapper(Tags.getAll));
 
+router.route("/register").post(controllerWrapper(Users.registerUser));
+router.route("/login").post(controllerWrapper(Users.loginUser));
+router.route("/check-auth").get(controllerWrapper(Users.checkAuth));
 export default router;

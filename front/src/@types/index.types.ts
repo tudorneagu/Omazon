@@ -17,8 +17,8 @@ export interface IProduct {
 	price: number;
 	image: string;
 	quantity: number;
-	category: ICategory;
-	tag: ITag | null;
+	categories: ICategory;
+	tags: ITag | null;
 	description: string;
 	inStock: boolean;
 }

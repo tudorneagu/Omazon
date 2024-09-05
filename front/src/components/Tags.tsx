@@ -5,6 +5,9 @@ interface TagProps {
 }
 
 const Tag = ({ tag }: TagProps) => {
+	if (!tag) {
+		return null;
+	}
 	return (
 		<div
 			className=" top-0 -left-7 w-[180px] overflow-hidden relative

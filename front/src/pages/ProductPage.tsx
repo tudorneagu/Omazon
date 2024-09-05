@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import products from "../data/products.json";
+
 import AddButton from "../components/ui/Buttons/AddButton";
 import FormatPrice from "../components/utils/FormatPrice";
+import { ProductContext } from "../contexts/ProductContext";
 
 function ProductPage() {
+	const { products } = useContext(ProductContext);
 	const { productTitle } = useParams();
 
 	const product = products.find((product) => product.title === productTitle);

@@ -20,9 +20,9 @@ function ProductCard({ product, showTag = true }: ProductCardProps) {
 		<div className="overflow-hidden relative border w-[330px] h-[518px] border-main-lower flex flex-col">
 			<Link to={`/product/${product.title}`} onClick={handleProductsClick}>
 				<div className="relative h-[330px] w-[330px] flex justify-center items-center bg-black/5">
-					{showTag && product.tag !== null && (
+					{showTag && product.tags !== null && (
 						<div className="absolute top-0 left-2">
-							<Tag tag={product.tag} />
+							<Tag tag={product.tags} />
 						</div>
 					)}
 					<img
