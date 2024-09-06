@@ -10,7 +10,7 @@ function SearchBar() {
 	const { searchQuery } = useContext(ProductContext);
 
 	return (
-		<form className="flex-grow flex h-9  ">
+		<form className="flex-grow flex h-9 ">
 			<SearchCategory />
 			<div className="flex flex-col h-9 relative w-full">
 				<SearchField />

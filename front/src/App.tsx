@@ -1,23 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-
+import LoginForm from "./components/ui/Modals/LoginForm";
+import AccountDetails from "./components/ui/Modals/AcountDetails";
 import CartPage from "./pages/CartPage";
 import AddProduct from "./components/ui/Modals/AddProduct";
 import { useContext } from "react";
-import { AddProductContext } from "./contexts/AddProductContext";
+import { ModalContext } from "./contexts/ModalContext";
+import { AuthContext } from "./contexts/AuthContext";
 
 function App() {
-	const { isModalOpen } = useContext(AddProductContext);
+	const { modals } = useContext(ModalContext);
+	const { loged } = useContext(AuthContext);
 	return (
 		<>
 			<Header />
 			<main className="flex justify-around">
-				{isModalOpen && <AddProduct />}
 				<div className="max-w-[1600px] w-full">
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -31,6 +33,9 @@ function App() {
 				</div>
 			</main>
 			<Footer />
+			{modals.addProduct && <AddProduct />}
+			{modals.login && !loged && <LoginForm />}
+			{modals.accountDetails && loged && <AccountDetails />}
 		</>
 	);
 }

@@ -30,7 +30,7 @@ function SearchResults() {
 	return (
 		<div>
 			{searchResults.length > 0 && (
-				<div className="absolute border border-main-lightest top-9 z-10 bg-main-lowest h-fit overflow-y-auto p-2">
+				<div className="absolute  w-full border border-main-lightest top-9 z-10 bg-main-lowest h-fit overflow-y-auto p-2">
 					{searchResults.slice(0, 6).map((product: IProduct) => (
 						<Link
 							to={`/product/${product.title}`}

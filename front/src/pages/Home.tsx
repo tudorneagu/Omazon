@@ -4,7 +4,7 @@ import AllProducts from "../components/Products/AllProducts";
 
 function Home() {
 	return (
-		<div className="flex flex-col gap-[72px] py-[48px] px-6">
+		<div className="flex flex-col gap-[72px] py-[48px] z-10 px-6">
 			<Categories />
 			<NewProducts />
 			<AllProducts />

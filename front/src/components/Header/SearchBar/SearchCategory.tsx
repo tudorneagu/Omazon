@@ -21,7 +21,7 @@ function SearchCategory() {
 	return (
 		<select
 			defaultValue=""
-			className=" w-auto bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg"
+			className=" bg-main-lower text-s-regular text-brand-grey px-3 rounded-l-lg"
 		>
 			<option value="" disabled>
 				Toutes nos catégories
