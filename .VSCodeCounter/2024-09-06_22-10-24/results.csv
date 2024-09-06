@@ -1,0 +1,86 @@
+"filename", "language", "TypeScript", "TypeScript JSX", "XML", "JSON", "CSS", "JavaScript", "JSON with Comments", "Properties", "HTML", "Markdown", "YAML", "SQL", "comment", "blank", "total"
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/categoriesController.js", "JavaScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 4, 13
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/productController.js", "JavaScript", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/tagController.js", "JavaScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 4, 13
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/userController.js", "JavaScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 1, 8, 68
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/data/create_tables.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 9, 53
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/data/populate_tables.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 18, 80
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/index.js", "JavaScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 10, 35
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/middlewares/controllerWrapper.js", "JavaScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/package.json", "JSON", 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 985, 0, 0, 322, 1307
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/routes/router.js", "JavaScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 5, 20
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/.env", "Properties", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 2
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 11, 52
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/biome.json", "JSON", 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 1, 14
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/package.json", "JSON", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 33
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2129, 0, 0, 636, 2765
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/postcss.config.js", "JavaScript", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/burger.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/caret-down.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/cart.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/chevron-right.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/close.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/down.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/search.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/user.svg", "XML", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 16
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/logos/favicon.svg", "XML", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/logos/omazon.svg", "XML", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/vite.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/@types/index.types.ts", "TypeScript", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 45
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/App.tsx", "TypeScript JSX", 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 44
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/assets/react.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Catégories/Categories.tsx", "TypeScript JSX", 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 28
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Catégories/CategoryCard.tsx", "TypeScript JSX", 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 34
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/Footer.tsx", "TypeScript JSX", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterCta.tsx", "TypeScript JSX", 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterLegals.tsx", "TypeScript JSX", 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterTop.tsx", "TypeScript JSX", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Account.tsx", "TypeScript JSX", 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 39
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Cart.tsx", "TypeScript JSX", 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 33
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Header.tsx", "TypeScript JSX", 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 31
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Logo.tsx", "TypeScript JSX", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchBar.tsx", "TypeScript JSX", 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchCategory.tsx", "TypeScript JSX", 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 40
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchField.tsx", "TypeScript JSX", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchResults.tsx", "TypeScript JSX", 0, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 51
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/UserPanel.tsx", "TypeScript JSX", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 15
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Nouveautés/NewProducts.tsx", "TypeScript JSX", 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 30
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/AllProducts.tsx", "TypeScript JSX", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/CartProduct.tsx", "TypeScript JSX", 0, 94, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 101
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/ProductCard.tsx", "TypeScript JSX", 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 58
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/Products.tsx", "TypeScript JSX", 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 29
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Tags.tsx", "TypeScript JSX", 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 31
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/AddButton.tsx", "TypeScript JSX", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 28
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/Button.tsx", "TypeScript JSX", 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/SearchButton.tsx", "TypeScript JSX", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/AcountDetails.tsx", "TypeScript JSX", 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 65
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/AddProduct.tsx", "TypeScript JSX", 0, 107, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 114
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/LoginForm.tsx", "TypeScript JSX", 0, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 78
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/utils/FormatPrice.tsx", "TypeScript JSX", 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/utils/NormaliseString.tsx", "TypeScript JSX", 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/AuthContext.tsx", "TypeScript JSX", 0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 84
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/CartContext.tsx", "TypeScript JSX", 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 72
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/ModalContext.tsx", "TypeScript JSX", 0, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 72
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/ProductContext.tsx", "TypeScript JSX", 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 72
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/categories.json", "JSON", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 51
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/products.json", "JSON", 0, 0, 0, 527, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 529
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/tags.json", "JSON", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 23
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/index.css", "CSS", 0, 0, 0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 0, 24, 107
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/main.tsx", "TypeScript JSX", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 25
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/CartPage.tsx", "TypeScript JSX", 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 86
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/CategoryPage.tsx", "TypeScript JSX", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 16
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/Home.tsx", "TypeScript JSX", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/ProductPage.tsx", "TypeScript JSX", 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 52
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/authService.ts", "TypeScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 31
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/categoryService.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 17
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/productService.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 17
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/tagService.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 17
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/vite-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tailwind.config.js", "JavaScript", 0, 0, 0, 0, 0, 74, 0, 0, 0, 0, 0, 0, 1, 2, 77
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.app.json", "JSON", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 25
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.node.json", "JSON", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 23
+"/Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/vite.config.ts", "TypeScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 11
+"Total", "-", 112, 1401, 60, 714, 83, 220, 7, 1, 13, 41, 3114, 106, 11, 1307, 7190

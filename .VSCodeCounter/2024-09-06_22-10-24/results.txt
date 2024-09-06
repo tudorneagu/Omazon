@@ -1,0 +1,153 @@
+Date : 2024-09-06 22:10:24
+Directory : /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon
+Total : 84 files,  5872 codes, 11 comments, 1307 blanks, all 7190 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| YAML               |          2 |      3,114 |          0 |        958 |      4,072 |
+| TypeScript JSX     |         39 |      1,401 |          0 |        195 |      1,596 |
+| JSON               |          8 |        714 |          4 |         13 |        731 |
+| JavaScript         |          9 |        220 |          2 |         40 |        262 |
+| TypeScript         |          7 |        112 |          2 |         26 |        140 |
+| SQL                |          2 |        106 |          0 |         27 |        133 |
+| CSS                |          1 |         83 |          0 |         24 |        107 |
+| XML                |         12 |         60 |          3 |         10 |         73 |
+| Markdown           |          1 |         41 |          0 |         11 |         52 |
+| HTML               |          1 |         13 |          0 |          1 |         14 |
+| JSON with Comments |          1 |          7 |          0 |          1 |          8 |
+| Properties         |          1 |          1 |          0 |          1 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                   |         84 |      5,872 |         11 |      1,307 |      7,190 |
+| back                                                                                                                |         11 |      1,260 |          1 |        387 |      1,648 |
+| back (Files)                                                                                                        |          3 |      1,039 |          0 |        333 |      1,372 |
+| back/controllers                                                                                                    |          4 |         91 |          1 |         20 |        112 |
+| back/data                                                                                                           |          2 |        106 |          0 |         27 |        133 |
+| back/middlewares                                                                                                    |          1 |          9 |          0 |          2 |         11 |
+| back/routes                                                                                                         |          1 |         15 |          0 |          5 |         20 |
+| front                                                                                                               |         73 |      4,612 |         10 |        920 |      5,542 |
+| front (Files)                                                                                                       |         12 |      2,364 |          6 |        664 |      3,034 |
+| front/public                                                                                                        |         11 |         59 |          3 |         10 |         72 |
+| front/public (Files)                                                                                                |          1 |          1 |          0 |          0 |          1 |
+| front/public/assets                                                                                                 |         10 |         58 |          3 |         10 |         71 |
+| front/public/assets/icons                                                                                           |          8 |         33 |          3 |          8 |         44 |
+| front/public/assets/logos                                                                                           |          2 |         25 |          0 |          2 |         27 |
+| front/src                                                                                                           |         50 |      2,189 |          1 |        246 |      2,436 |
+| front/src (Files)                                                                                                   |          4 |        146 |          1 |         31 |        178 |
+| front/src/@types                                                                                                    |          1 |         38 |          0 |          7 |         45 |
+| front/src/assets                                                                                                    |          1 |          1 |          0 |          0 |          1 |
+| front/src/components                                                                                                |         29 |        932 |          0 |        125 |      1,057 |
+| front/src/components (Files)                                                                                        |          1 |         27 |          0 |          4 |         31 |
+| front/src/components/Catégories                                                                                     |          2 |         52 |          0 |         10 |         62 |
+| front/src/components/Footer                                                                                         |          4 |         80 |          0 |         10 |         90 |
+| front/src/components/Header                                                                                         |          9 |        234 |          0 |         38 |        272 |
+| front/src/components/Header (Files)                                                                                 |          5 |        116 |          0 |         17 |        133 |
+| front/src/components/Header/SearchBar                                                                               |          4 |        118 |          0 |         21 |        139 |
+| front/src/components/Nouveautés                                                                                     |          1 |         26 |          0 |          4 |         30 |
+| front/src/components/Products                                                                                       |          4 |        192 |          0 |         22 |        214 |
+| front/src/components/ui                                                                                             |          6 |        304 |          0 |         34 |        338 |
+| front/src/components/ui/Buttons                                                                                     |          3 |         69 |          0 |         12 |         81 |
+| front/src/components/ui/Modals                                                                                      |          3 |        235 |          0 |         22 |        257 |
+| front/src/components/utils                                                                                          |          2 |         17 |          0 |          3 |         20 |
+| front/src/contexts                                                                                                  |          4 |        259 |          0 |         41 |        300 |
+| front/src/data                                                                                                      |          3 |        599 |          0 |          4 |        603 |
+| front/src/pages                                                                                                     |          4 |        147 |          0 |         23 |        170 |
+| front/src/services                                                                                                  |          4 |         67 |          0 |         15 |         82 |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                            | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/categoriesController.js                 | JavaScript         |          9 |          0 |          4 |         13 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/productController.js                    | JavaScript         |         14 |          0 |          4 |         18 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/tagController.js                        | JavaScript         |          9 |          0 |          4 |         13 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/controllers/userController.js                       | JavaScript         |         59 |          1 |          8 |         68 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/data/create_tables.sql                              | SQL                |         44 |          0 |          9 |         53 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/data/populate_tables.sql                            | SQL                |         62 |          0 |         18 |         80 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/index.js                                            | JavaScript         |         25 |          0 |         10 |         35 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/middlewares/controllerWrapper.js                    | JavaScript         |          9 |          0 |          2 |         11 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/package.json                                        | JSON               |         29 |          0 |          1 |         30 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/pnpm-lock.yaml                                      | YAML               |        985 |          0 |        322 |      1,307 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/back/routes/router.js                                    | JavaScript         |         15 |          0 |          5 |         20 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/.env                                               | Properties         |          1 |          0 |          1 |          2 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/README.md                                          | Markdown           |         41 |          0 |         11 |         52 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/biome.json                                         | JSON               |         16 |          0 |          1 |         17 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/index.html                                         | HTML               |         13 |          0 |          1 |         14 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/package.json                                       | JSON               |         32 |          0 |          1 |         33 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/pnpm-lock.yaml                                     | YAML               |      2,129 |          0 |        636 |      2,765 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/postcss.config.js                                  | JavaScript         |          6 |          0 |          1 |          7 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/burger.svg                     | XML                |          5 |          0 |          1 |          6 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/caret-down.svg                 | XML                |          3 |          0 |          1 |          4 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/cart.svg                       | XML                |          5 |          0 |          1 |          6 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/chevron-right.svg              | XML                |          3 |          0 |          1 |          4 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/close.svg                      | XML                |          3 |          0 |          0 |          3 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/down.svg                       | XML                |          1 |          0 |          0 |          1 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/search.svg                     | XML                |          3 |          0 |          1 |          4 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/icons/user.svg                       | XML                |         10 |          3 |          3 |         16 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/logos/favicon.svg                    | XML                |         15 |          0 |          1 |         16 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/assets/logos/omazon.svg                     | XML                |         10 |          0 |          1 |         11 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/public/vite.svg                                    | XML                |          1 |          0 |          0 |          1 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/@types/index.types.ts                          | TypeScript         |         38 |          0 |          7 |         45 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/App.tsx                                        | TypeScript JSX     |         40 |          0 |          4 |         44 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/assets/react.svg                               | XML                |          1 |          0 |          0 |          1 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Catégories/Categories.tsx           | TypeScript JSX     |         24 |          0 |          4 |         28 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Catégories/CategoryCard.tsx         | TypeScript JSX     |         28 |          0 |          6 |         34 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/Footer.tsx                   | TypeScript JSX     |         13 |          0 |          2 |         15 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterCta.tsx                | TypeScript JSX     |         32 |          0 |          4 |         36 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterLegals.tsx             | TypeScript JSX     |         17 |          0 |          2 |         19 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Footer/FooterTop.tsx                | TypeScript JSX     |         18 |          0 |          2 |         20 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Account.tsx                  | TypeScript JSX     |         35 |          0 |          4 |         39 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Cart.tsx                     | TypeScript JSX     |         29 |          0 |          4 |         33 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Header.tsx                   | TypeScript JSX     |         28 |          0 |          3 |         31 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/Logo.tsx                     | TypeScript JSX     |         13 |          0 |          2 |         15 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchBar.tsx      | TypeScript JSX     |         20 |          0 |          5 |         25 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchCategory.tsx | TypeScript JSX     |         33 |          0 |          7 |         40 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchField.tsx    | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/SearchBar/SearchResults.tsx  | TypeScript JSX     |         46 |          0 |          5 |         51 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Header/UserPanel.tsx                | TypeScript JSX     |         11 |          0 |          4 |         15 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Nouveautés/NewProducts.tsx          | TypeScript JSX     |         26 |          0 |          4 |         30 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/AllProducts.tsx            | TypeScript JSX     |         22 |          0 |          4 |         26 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/CartProduct.tsx            | TypeScript JSX     |         94 |          0 |          7 |        101 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/ProductCard.tsx            | TypeScript JSX     |         51 |          0 |          7 |         58 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Products/Products.tsx               | TypeScript JSX     |         25 |          0 |          4 |         29 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/Tags.tsx                            | TypeScript JSX     |         27 |          0 |          4 |         31 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/AddButton.tsx            | TypeScript JSX     |         22 |          0 |          6 |         28 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/Button.tsx               | TypeScript JSX     |         32 |          0 |          4 |         36 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Buttons/SearchButton.tsx         | TypeScript JSX     |         15 |          0 |          2 |         17 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/AcountDetails.tsx         | TypeScript JSX     |         59 |          0 |          6 |         65 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/AddProduct.tsx            | TypeScript JSX     |        107 |          0 |          7 |        114 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/ui/Modals/LoginForm.tsx             | TypeScript JSX     |         69 |          0 |          9 |         78 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/utils/FormatPrice.tsx               | TypeScript JSX     |         10 |          0 |          2 |         12 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/components/utils/NormaliseString.tsx           | TypeScript JSX     |          7 |          0 |          1 |          8 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/AuthContext.tsx                       | TypeScript JSX     |         73 |          0 |         11 |         84 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/CartContext.tsx                       | TypeScript JSX     |         63 |          0 |          9 |         72 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/ModalContext.tsx                      | TypeScript JSX     |         62 |          0 |         10 |         72 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/contexts/ProductContext.tsx                    | TypeScript JSX     |         61 |          0 |         11 |         72 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/categories.json                           | JSON               |         50 |          0 |          1 |         51 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/products.json                             | JSON               |        527 |          0 |          2 |        529 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/data/tags.json                                 | JSON               |         22 |          0 |          1 |         23 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/index.css                                      | CSS                |         83 |          0 |         24 |        107 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/main.tsx                                       | TypeScript JSX     |         23 |          0 |          2 |         25 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/CartPage.tsx                             | TypeScript JSX     |         78 |          0 |          8 |         86 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/CategoryPage.tsx                         | TypeScript JSX     |         11 |          0 |          5 |         16 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/Home.tsx                                 | TypeScript JSX     |         13 |          0 |          3 |         16 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/pages/ProductPage.tsx                          | TypeScript JSX     |         45 |          0 |          7 |         52 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/authService.ts                        | TypeScript         |         28 |          0 |          3 |         31 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/categoryService.ts                    | TypeScript         |         13 |          0 |          4 |         17 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/productService.ts                     | TypeScript         |         13 |          0 |          4 |         17 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/services/tagService.ts                         | TypeScript         |         13 |          0 |          4 |         17 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/src/vite-env.d.ts                                  | TypeScript         |          0 |          1 |          1 |          2 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tailwind.config.js                                 | JavaScript         |         74 |          1 |          2 |         77 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.app.json                                  | JSON               |         20 |          2 |          3 |         25 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.json                                      | JSON with Comments |          7 |          0 |          1 |          8 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/tsconfig.node.json                                 | JSON               |         18 |          2 |          3 |         23 |
+| /Users/tudorneagu/Documents/oclock/challenges/S16 - Amazon/front/vite.config.ts                                     | TypeScript         |          7 |          1 |          3 |         11 |
+| Total                                                                                                               |                    |      5,872 |         11 |      1,307 |      7,190 |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
