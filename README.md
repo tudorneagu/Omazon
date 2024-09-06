@@ -26,7 +26,7 @@ This project is a full-stack clone of Amazon, where users can browse products, m
 - **Express**: Web framework for Node.js to handle routes and API requests.
 - **Prisma**: ORM for database management.
 - **PostgreSQL**: Relational database used for storing data.
-
+- **Session Management**: Cookies are used to manage user sessions, ensuring secure and persistent authentication without the use of JWT.
 
 ## 🛠️ Development Tools
 
@@ -35,12 +35,3 @@ This project is a full-stack clone of Amazon, where users can browse products, m
 - **Tailwind CSS**: For building responsive designs quickly.
 - **PostCSS/Autoprefixer**: For processing CSS.
 
-## 📦 Installation and Setup
-
-To get the project running locally, follow these steps:
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/your-username/amazon-clone.git
-   cd amazon-clone
