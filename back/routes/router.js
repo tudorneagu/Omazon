@@ -1,5 +1,5 @@
 import express from "express";
-import Users from "../controllers/userController.js";
+import users from "../controllers/userController.js";
 import Categories from "../controllers/categoriesController.js";
 import Products from "../controllers/productController.js";
 import Tags from "../controllers/tagController.js";
@@ -7,12 +7,13 @@ import controllerWrapper from "../middlewares/controllerWrapper.js";
 
 const router = express.Router();
 
-router.route("/users").get(controllerWrapper(Users.getAll));
 router.route("/categories").get(controllerWrapper(Categories.getAll));
 router.route("/products").get(controllerWrapper(Products.getAll));
 router.route("/tags").get(controllerWrapper(Tags.getAll));
 
-router.route("/register").post(controllerWrapper(Users.registerUser));
-router.route("/login").post(controllerWrapper(Users.loginUser));
-router.route("/check-auth").get(controllerWrapper(Users.checkAuth));
+router.route("/register").post(controllerWrapper(users.registerUser));
+router.route("/login").post(controllerWrapper(users.loginUser));
+router.route("/logout").post(controllerWrapper(users.logoutUser));
+router.route("/check-auth").get(controllerWrapper(users.checkAuth));
+
 export default router;

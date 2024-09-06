@@ -4,10 +4,10 @@ import authService from "../services/authService";
 const AuthContext = createContext();
 
 function AuthProvider({ children }: { children: React.ReactNode }) {
-	const [loginForm, setLoginForm] = useState(false);
+	const [loginForm, setLoginForm] = useState(true);
 	const [loged, setLoged] = useState(false);
 	const [authData, setAuthData] = useState(null);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState("");
 
 	const navigate = useNavigate();
 
@@ -15,15 +15,21 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 		const checkAuth = async () => {
 			try {
 				const response = await authService.checkAuth();
-				setAuthData(response.user);
-				setLoged(true);
+
+				if (response) {
+					const storedAuthData = localStorage.getItem("authData");
+					if (storedAuthData) setAuthData(JSON.parse(storedAuthData));
+
+					setLoged(true);
+					console.log(authData);
+				}
 			} catch (error) {
-				console.log("didnt work");
+				console.log("Authentication check failed:", error);
 				setAuthData(null);
 				setLoged(false);
+				localStorage.removeItem("authData");
 			}
 		};
-
 		checkAuth();
 	}, []);
 
@@ -33,21 +39,26 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 			const userData = await authService.login(email, password);
 			console.log("User data received:", userData);
 			setAuthData(userData);
+			console.log(userData);
+			localStorage.setItem("authData", JSON.stringify(userData));
+
 			setLoginForm(false);
 			setLoged(true);
 			localStorage;
-			navigate("/cart");
+			navigate("/");
 		} catch (error) {
 			setError("Email or password incorrect. Please try again.");
 		}
 	};
 
 	const logoutUser = async () => {
+		setError(null);
 		try {
 			await authService.logout();
 			setAuthData(null);
-			setLoged(true);
-			navigate("/home");
+			localStorage.removeItem("userData");
+			setLoged(false);
+			navigate("/");
 		} catch (error) {
 			setError("Logout failed. Please try again.");
 		}
@@ -56,10 +67,8 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 	return (
 		<AuthContext.Provider
 			value={{
-				loginForm,
-				setLoginForm,
-
 				authData,
+				loginForm,
 				loginUser,
 				logoutUser,
 				loged,

@@ -4,10 +4,18 @@ import { ModalContext } from "../../../contexts/ModalContext";
 import type { ModalContextType } from "../../../@types/index.types";
 
 function LoginForm() {
-	const { emailRef } = useContext(AuthContext);
+	const { logoutUser, authData } = useContext(AuthContext);
 	const { onClose, stopPropagation } = useContext(
 		ModalContext,
 	) as ModalContextType;
+
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault();
+		logoutUser();
+	};
+
+	const { firstname, lastname } = authData.user;
+
 	return (
 		<div
 			onClick={onClose}
@@ -27,7 +35,9 @@ function LoginForm() {
 						/>
 					</div>
 					<div>
-						<h4 className="text-m-medium text-main-highest">Dave Lopper</h4>
+						<h4 className="text-m-medium text-main-highest">
+							{firstname} {lastname}
+						</h4>
 						<p className="text-s-regular text-info-low">Titulaire du compte</p>
 					</div>
 				</div>
@@ -39,12 +49,14 @@ function LoginForm() {
 					/>
 				</div>
 			</div>
-			<div
-				to="/register"
+			<button
+				type="button"
+				onClick={handleSubmit}
+				to="/"
 				className="mt-4 text-s-regular text-main-high active:text-info-higher  active:font-semibold hover:text-button-active-background"
 			>
 				Deconnexion
-			</div>
+			</button>
 		</div>
 	);
 }
