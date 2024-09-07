@@ -31,7 +31,7 @@ function LoginForm() {
 						<div className="w-12 h-12 rounded-full flex  items-end justify-center overflow-hidden bg-info-medium">
 							<img
 								className="z-10 w-11 h-11 fill-white "
-								src="./assets/icons/user.svg"
+								src="/assets/icons/user.svg"
 								alt="user profile thumbnail"
 							/>
 						</div>
@@ -48,7 +48,8 @@ function LoginForm() {
 						<p>Gérer les profils</p>
 						<img
 							className="h-2 stroke-info-medium"
-							src="./assets/icons/chevron-right.svg"
+							src="/assets/icons/chevron-right.svg"
+							alt=""
 						/>
 					</div>
 				</div>
