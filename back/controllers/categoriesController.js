@@ -2,11 +2,11 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-const Categories = {
+const categories = {
 	getAll: async (req, res) => {
 		const categories = await prisma.categories.findMany();
 		res.json(categories);
 	},
 };
 
-export default Categories;
+export default categories;

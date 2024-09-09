@@ -31,9 +31,9 @@ model products {
   instock       Boolean
   category_id   Int?
   tag_id        Int?
-  categories    categories?     @relation(fields: [category_id], references: [id], onDelete: Cascade)
-  tags          tags?           @relation(fields: [tag_id], references: [id], onDelete: Cascade)
   carts         carts[]
+  categories    categories?     @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  tags          tags?           @relation(fields: [tag_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   user_products user_products[]
 }
 
@@ -43,7 +43,8 @@ model users {
   lastname      String          @db.VarChar(255)
   email         String          @unique @db.VarChar(255)
   password      String          @db.VarChar(255)
-  carts         carts[]         
+  account_type  String          @db.VarChar(50)
+  carts         carts[]
   user_products user_products[]
 }
 
@@ -51,20 +52,19 @@ model user_products {
   user_id    Int
   product_id Int
   created_at DateTime? @default(now()) @db.Timestamp(6)
-  products   products  @relation(fields: [product_id], references: [id], onDelete: Cascade)
-  users      users     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  products   products  @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      users     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
   @@id([user_id, product_id])
 }
 
 model carts {
-  user_id    Int
-  product_id Int
+  id         Int       @id @default(autoincrement())
+  user_id    Int?
+  product_id Int?
   quantity   Int
   created_at DateTime? @default(now()) @db.Timestamp(6)
   updated_at DateTime? @default(now()) @db.Timestamp(6)
-  products   products? @relation(fields: [product_id], references: [id], onDelete: Cascade)
-  users      users?    @relation(fields: [user_id], references: [id], onDelete: Cascade)
-
-  @@id([user_id, product_id])
+  products   products? @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      users?    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }

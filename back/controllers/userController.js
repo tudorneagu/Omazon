@@ -5,8 +5,13 @@ const prisma = new PrismaClient();
 
 const users = {
 	registerUser: async (req, res) => {
+		const { firstname, lastname, email, password, account_type } = req.body;
+
+		if (!email) {
+			return res.status(400).json({ error: "Email is required" });
+		}
+
 		try {
-			const { firstname, lastname, email, password } = req.body;
 			const existingUser = await prisma.users.findUnique({ where: { email } });
 			if (existingUser) {
 				return res.status(400).json({ error: "User already exists" });
@@ -19,11 +24,11 @@ const users = {
 					lastname,
 					email,
 					password: hashedPassword,
+					account_type,
 				},
 			});
 			res.status(201).json({ message: "User registered successfully" });
 		} catch (error) {
-			// Catch any errors within the controller and ensure it bubbles up to the wrapper
 			throw new Error(`Error registering user: ${error.message}`);
 		}
 	},
@@ -38,10 +43,10 @@ const users = {
 		if (!isMatch) {
 			return res.status(400).json({ error: "Invalid username or password" });
 		}
-		const { firstname, lastname } = user;
+		const { firstname, lastname, id, account_type } = user;
 		req.session.user = { id: user.id };
 		res.status(200).json({
-			user: { firstname, lastname, email },
+			user: { firstname, lastname, email, id, account_type },
 		});
 	},
 
