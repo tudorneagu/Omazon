@@ -2,8 +2,10 @@ import { AuthContext } from "../../../contexts/AuthContext";
 import { useContext } from "react";
 import { ModalContext } from "../../../contexts/ModalContext";
 import type { ModalContextType } from "../../../@types/index.types";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+	const navigate = useNavigate();
 	const { logoutUser, authData } = useContext(AuthContext);
 	const { closeModal, stopPropagation } = useContext(
 		ModalContext,
@@ -12,6 +14,10 @@ function LoginForm() {
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		logoutUser();
+	};
+
+	const handleAccountDetails = () => {
+		navigate(`/accountDetails`);
 	};
 
 	const { firstname, lastname } = authData.user;
@@ -44,14 +50,18 @@ function LoginForm() {
 							</p>
 						</div>
 					</div>
-					<div className="flex gap-2 flex-grow-0 items-center justify-end text-s-regular text-info-medium ">
+					<button
+						type="button"
+						onClick={handleAccountDetails}
+						className="flex gap-2 flex-grow-0 items-center justify-end text-s-regular text-info-medium"
+					>
 						<p>Gérer les profils</p>
 						<img
 							className="h-2 stroke-info-medium"
 							src="/assets/icons/chevron-right.svg"
 							alt=""
 						/>
-					</div>
+					</button>
 				</div>
 				<button
 					type="button"

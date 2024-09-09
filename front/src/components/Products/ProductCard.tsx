@@ -1,5 +1,5 @@
 import Button from "../ui/Buttons/AddButton";
-import Tag from "../Tags";
+import Tag from "../Tags/Tags";
 import type { IProduct } from "../../@types/index.types";
 import FormatPrice from "../utils/FormatPrice";
 import { Link, useNavigate } from "react-router-dom";
