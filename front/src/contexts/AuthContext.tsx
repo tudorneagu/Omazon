@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import authService from "../services/authService";
+import cartService from "../services/cartService";
 const AuthContext = createContext();
 
 function AuthProvider({ children }: { children: React.ReactNode }) {
@@ -64,7 +65,6 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 			setLoged(true);
 			localStorage.setItem("authData", JSON.stringify(newUserData));
 			setSuccess("User created successfully!");
-			navigate("/");
 		} catch (error) {
 			if (error.response && error.response.status === 400) {
 				setError("Un compte avec cet email existe déjà..");
@@ -105,7 +105,7 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 		}
 	};
 
-	const addProduct = async (newProductData) => {
+	const addUserProduct = async (newProductData) => {
 		const {
 			title,
 			url,
@@ -138,7 +138,7 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 					return setError(validation.message);
 				}
 			}
-			const newProduct = await authService.addProduct({
+			const newProduct = await cartService.addProduct({
 				title,
 				url,
 				price,
@@ -163,7 +163,7 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 				authData,
 				error,
 				success,
-				addProduct,
+				addUserProduct,
 			}}
 		>
 			{children}
