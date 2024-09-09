@@ -55,7 +55,7 @@ function LoginForm() {
 						/>
 					</label>
 					<div>
-						<Button type="submit" content="Identifiez-vous" px="16" />
+						<Button type="submit" content="Identifiez-vous" px="px-16" />
 
 						{error && <p className="text-red-500 ptext-xs">{error}</p>}
 					</div>

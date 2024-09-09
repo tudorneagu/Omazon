@@ -37,6 +37,12 @@ const authService = {
     });
     return response.data;
   },
+  addProduct: async () => {
+    const response = await axiosInstance.post('/newproduct', {
+      withCredentials: true,
+    });
+    return response.data;
+  },
 };
 
 export default authService;
