@@ -14,8 +14,16 @@ const products = {
 	},
 
 	getAllUserProducts: async (req, res) => {
-		const results = await prisma.products.findMany({
+		const results = await prisma.user_products.findMany({
 			where: { user_id: Number.parseInt(req.params.id) },
+			include: {
+				products: {
+					include: {
+						categories: true,
+						tags: true,
+					},
+				},
+			},
 		});
 		res.json(results);
 	},
@@ -63,11 +71,37 @@ const products = {
 	},
 
 	deleteUserProduct: async (req, res) => {
-		const target = await prisma.products.delete({
-			where: { id: Number.parseInt(req.params.id) },
-		});
-		res.json("Product has been succefully deleted");
+		const { userId, productId } = req.params;
+
+		try {
+			// Step 1: Delete the relationship in the user_products table
+			const relationship = await prisma.user_products.deleteMany({
+				where: {
+					user_id: Number(userId),
+					product_id: Number(productId),
+				},
+			});
+
+			if (relationship.count === 0) {
+				return res.status(404).json({ message: "Relationship not found." });
+			}
+
+			const deletedProduct = await prisma.products.delete({
+				where: {
+					id: Number(productId),
+				},
+			});
+
+			return res.status(200).json({
+				message: "Product and relationship removed successfully.",
+				deletedProduct,
+			});
+		} catch (error) {
+			console.error("Error deleting user product and relationship:", error);
+			return res.status(500).json({ message: "Internal server error." });
+		}
 	},
+
 	updateUserProduct: async (req, res) => {
 		const updatedProduct = await prisma.products.update({
 			where: { id: Number.parseInt(req.params.id) },
