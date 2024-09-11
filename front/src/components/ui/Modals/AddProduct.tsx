@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ModalContext } from "../../../contexts/ModalContext";
 import { ProductContext } from "../../../contexts/ProductContext";
 import type { ITag } from "../../../@types/index.types";
@@ -7,12 +7,15 @@ import Button from "../Buttons/Button";
 import type { ModalContextType } from "../../../contexts/ModalContext";
 import { useState } from "react";
 import { CartContext } from "../../../contexts/CartContext";
+import type { CartContextType } from "../../../contexts/CartContext";
 
 function AddProduct() {
 	const { closeModal, stopPropagation } = useContext(
 		ModalContext,
 	) as ModalContextType;
-	const { addUserProduct, error, success } = useContext(CartContext);
+	const { addUserProduct, error, success } = useContext(
+		CartContext,
+	) as CartContextType;
 	const productContext = useContext(ProductContext);
 	const categories = productContext?.categories;
 	const tags = productContext?.tags;
@@ -23,18 +26,21 @@ function AddProduct() {
 
 	const [newProductData, setNewProductData] = useState({
 		title: "",
-		url: "",
-		price: "",
+		image: "",
+		price: Number,
 		description: "",
-		inStock: "",
-		category_id: "",
-		tag_id: "",
+		inStock: true,
+		category_id: Number,
+		tag_id: Number,
 		user_id: userId,
 	});
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
-		setNewProductData({ ...newProductData, [name]: value });
+		setNewProductData({
+			...newProductData,
+			[name]: value,
+		});
 	};
 
 	const handleSubmit = async (e) => {
@@ -106,13 +112,13 @@ function AddProduct() {
 							/>
 						</div>
 						<div className="flex flex-col ">
-							<label htmlFor="url" className="text-main-medium">
+							<label htmlFor="image" className="text-main-medium">
 								URL de la photo
 							</label>
 							<input
 								className="border-2 rounded-md border-main-medium/40 focus:border-info-medium focus:shadow-md invalid:border-danger-medium pl-2"
 								type="text"
-								name="url"
+								name="image"
 								placeholder="https://a0.mouscache.com/im/pictures"
 								onChange={handleChange}
 							/>

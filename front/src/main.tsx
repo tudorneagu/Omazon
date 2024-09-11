@@ -6,6 +6,7 @@ import { ModalProvider } from "./contexts/ModalContext.tsx";
 import { AuthProvider } from "./contexts/AuthContext";
 import { CartProvider } from "./contexts/CartContext";
 import { BrowserRouter } from "react-router-dom";
+import { UserProvider } from "./contexts/UserContext.tsx";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
 	<>
@@ -14,7 +15,9 @@ createRoot(document.getElementById("root") as HTMLElement).render(
 				<AuthProvider>
 					<ModalProvider>
 						<CartProvider>
-							<App />
+							<UserProvider>
+								<App />
+							</UserProvider>
 						</CartProvider>
 					</ModalProvider>
 				</AuthProvider>

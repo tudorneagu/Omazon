@@ -1,7 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import type { IProduct } from "../@types/index.types";
 import cartService from "../services/cartService";
-import { useContext } from "react";
 
 const CartContext = createContext();
 
@@ -62,10 +61,21 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 
 	// User product management
 
-	const addUserProduct = async (newProductData) => {
+	interface NewProductData {
+		title: string;
+		image: string;
+		price: number;
+		category_id: number;
+		tag_id?: number;
+		inStock: boolean;
+		description: string;
+		user_id: number;
+	}
+
+	const addUserProduct = async (newProductData: NewProductData) => {
 		const {
 			title,
-			url,
+			image,
 			price,
 			category_id,
 			tag_id,
@@ -73,12 +83,15 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 			description,
 			user_id,
 		} = newProductData;
-		setError(null);
-		setSuccess(null);
+		setError("");
+		setSuccess("");
 		try {
 			const validations = [
 				{ field: title, message: "Veuillez renseigner le titre du produit" },
-				{ field: url, message: "Veuillez rajouter une image de votre produit" },
+				{
+					field: image,
+					message: "Veuillez rajouter une image de votre produit",
+				},
 				{ field: price, message: "Veuillez préciser le prix de votre produit" },
 				{
 					field: description,
@@ -97,7 +110,7 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 			}
 			const newProduct = await cartService.addUserProductService({
 				title,
-				url,
+				image,
 				price,
 				category_id,
 				tag_id,
@@ -118,6 +131,8 @@ function CartProvider({ children }: { children: React.ReactNode }) {
 				handleAdd,
 				handleRemove,
 				addUserProduct,
+				success,
+				error,
 			}}
 		>
 			{children}

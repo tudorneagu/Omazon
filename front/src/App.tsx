@@ -24,10 +24,13 @@ function App() {
 	const { modals } = useContext(ModalContext);
 	const { loged } = useContext(AuthContext);
 	return (
-		<div className="flex flex-col justify-between min-h-screen">
+		<div
+			className="flex flex-col justify-between
+		 min-h-screen"
+		>
 			<Header />
 			<main className="flex justify-center">
-				<div className="max-w-[1600px] w-full">
+				<div className="max-w-[1600px] w-full h-full">
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route
